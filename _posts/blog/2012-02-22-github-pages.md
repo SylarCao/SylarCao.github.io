@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用Github Pages建独立博客
+title: 使用Github Pages建独立博客kkkkk
 description: Github本身就是不错的代码社区，他也提供了一些其他的服务，比如Github Pages，使用它可以很方便的建立自己的独立博客，并且免费。
 category: blog
 ---
@@ -300,8 +300,8 @@ Google的高亮插件使用也比较方便，只需要在`<pre>`的标签上加�
 
 作为生活在水深火热的墙内人民，有必要进行下面一步修改gem的源，方便我们更快的下载所需组建：
 
-    sudo gem sources --remove http://rubygems.org/ 
-    sudo gem sources -a http://ruby.taobao.org/ 
+    sudo gem sources --remove http://rubygems.org/
+    sudo gem sources -a http://ruby.taobao.org/
 
 然后用Gem安装jekyll
 
