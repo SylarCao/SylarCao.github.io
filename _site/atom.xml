@@ -4,7 +4,7 @@
    <title>BeiYuu.com</title>
    <link href="http://beiyuu.com/atom.xml" rel="self" type="application/atom+xml"/>
    <link href="http://beiyuu.com" rel="alternate" type="text/html" />
-   <updated>2015-03-19T15:00:58+08:00</updated>
+   <updated>2015-03-19T15:10:12+08:00</updated>
    <id>http://beiyuu.com</id>
    <author>
      <name></name>
@@ -74,7 +74,7 @@
 
 &lt;h2&gt;参考&lt;/h2&gt;
 
-&lt;blockquote&gt;&lt;p&gt;&lt;a href = &quot;http://beiyuu.com/github-pages/&quot;&gt;http://beiyuu.com/github-pages/&lt;/a&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;a href = &quot;http://beiyuu.com/github-pages&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;http://beiyuu.com/github-pages&lt;/a&gt;
 &lt;br&gt;
 &lt;a href = &quot;http://kimmykuang.github.io/local-jekyll.html&quot;&gt;http://kimmykuang.github.io/local-jekyll.html&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 

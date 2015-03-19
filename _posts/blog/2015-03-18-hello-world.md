@@ -38,7 +38,7 @@ description:  Hello World
 
 
 ## 参考
-><a href = "http://beiyuu.com/github-pages/">http://beiyuu.com/github-pages/</a>
+><a href = "http://beiyuu.com/github-pages" class="external" target="_blank">http://beiyuu.com/github-pages</a>
 <br>
 ><a href = "http://kimmykuang.github.io/local-jekyll.html">http://kimmykuang.github.io/local-jekyll.html</a>
 
