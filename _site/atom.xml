@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
-   <title>BeiYuu.com</title>
-   <link href="http://beiyuu.com/atom.xml" rel="self" type="application/atom+xml"/>
-   <link href="http://beiyuu.com" rel="alternate" type="text/html" />
-   <updated>2015-03-20T16:33:01+08:00</updated>
-   <id>http://beiyuu.com</id>
+   <title></title>
+   <link href="" rel="self" type="application/atom+xml"/>
+   <link href="" rel="alternate" type="text/html" />
+   <updated>2015-03-27T11:04:32+08:00</updated>
+   <id></id>
    <author>
      <name></name>
      <email></email>
@@ -13,15 +13,99 @@
 
    
    <entry>
+     <title>小白学ruby【基本语法持续更新中】</title>
+     <link href="http://beiyuu.com/blog/2015/03/24/%E5%B0%8F%E7%99%BD%E5%AD%A6ruby.html"/>
+     <updated>2015-03-24T00:00:00+08:00</updated>
+     <id>http://beiyuu.com/blog/2015/03/24/小白学ruby</id>
+     <content type="html">&lt;blockquote&gt;&lt;p style=&quot;
+    color: gray;
+&quot;&gt;本人从2012年开始学习ios，现在开始学习ruby，记录下学习过程中遇到的各种坑（个人分享经验，仅供参考）...
+&lt;br /&gt;
+转载请声明出处:  &lt;a href=&quot;http://kimmykuang.github.io/local-jekyll.html&quot;&gt;本文转自sylar的博客&lt;/a&gt;
+&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;ruby---&quot;&gt;ruby - 竟然没有函数重载&lt;/h2&gt;
+&lt;ol style=&quot; margin-bottom: 8px; &quot;&gt;我以为有的，此处省略我被坑了34次……&lt;/ol&gt;
+&lt;blockquote&gt;&lt;p style=&quot;
+    color: gray;
+&quot;&gt;参考连接:  &lt;a href=&quot;http://dtzq01.iteye.com/blog/1010557&quot;&gt;http://dtzq01.iteye.com/blog/1010557&lt;/a&gt;
+&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;ruby---random&quot;&gt;ruby - random数字&lt;/h2&gt;
+
+&lt;scomment&gt;# 随机一个 0-9 的数字&lt;/scomment&gt;
+&lt;p&gt;&lt;code&gt;random_number = Random.rand (10)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ruby---for-&quot;&gt;ruby - for 循环&lt;/h2&gt;
+&lt;scomment&gt; # for loop [1,10) &lt;/scomment&gt;
+&lt;p&gt;&lt;code&gt; for i in 1...10&lt;/code&gt;&lt;/p&gt;
+&lt;scomment&gt;其他for, while, break 循环:  &lt;a href=&quot;http://www.tutorialspoint.com/ruby/ruby_loops.htm&quot;&gt;http://www.tutorialspoint.com/ruby/ruby_loops.htm&lt;/a&gt;
+&lt;/scomment&gt;
+
+</content>
+   </entry>
+   
+   <entry>
+     <title>合拍吧——我的第一个创业项目</title>
+     <link href="http://beiyuu.com/blog/2015/03/24/%E5%90%88%E6%8B%8D%E5%90%A7.html"/>
+     <updated>2015-03-24T00:00:00+08:00</updated>
+     <id>http://beiyuu.com/blog/2015/03/24/合拍吧</id>
+     <content type="html">&lt;h2 id=&quot;section&quot;&gt;感谢&lt;/h2&gt;
+&lt;p&gt;感谢 陈zt 和 朱dl 二位程序猿前辈带领我做的这个app
+&lt;br /&gt;
+感谢 侯kl 把我安排到了这个项目&lt;/p&gt;
+
+&lt;h2 id=&quot;app&quot;&gt;app简介&lt;/h2&gt;
+&lt;blockquote&gt;&lt;p style=&quot;
+    color: gray; margin-bottom: 13px;
+&quot;&gt;还在独自无聊自拍？别OUT了——21世纪，没有互动就没有照片！&lt;br /&gt;
+快来使用这款史无前例的合拍神器吧！&lt;br /&gt;
+•眼花缭乱的合拍相纸——能够让你和各式朋友交互创造出千奇百怪的合影照片！&lt;br /&gt;
+•及时分享的动态页面——让你实时掌握朋友们的每个瞬间！&lt;br /&gt;
+•收纳合理的照片相集——精确归类你的各色照片！&lt;br /&gt;
+•及时畅快的聊天系统——保证与合拍的TA沟通无障碍！&lt;br /&gt;
+•随时查看附近潮人——三种搜索形态，各式筛选规则，让寻找趣人趣照变的易如反掌！&lt;br /&gt;
+•一目了然的排行榜——闪亮的自己总会被发现，万众瞩目就在此间！&lt;br /&gt;
+“与女神合体，和白马共存”不再是梦想，一切可能尽在——合——拍——吧！&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;这个app主要功能就是能让普(屌)通(丝)人能和自己的明星合照（参考下图）
+&lt;img src=&quot;/images/1/img_paba_1.png&quot; alt=&quot;Alt text&quot; /&gt;
+当然还包括了朋友圈聊天等基本的社交功能&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;制作感想&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;主推的是拍照功能，当然这个功能肯定是大头，花了大部分时间做。一开始，我们设计了各种背景和蒙板，还区分了横竖屏幕以及手机的4个方向来适应我们不同的背景。
+目的是为了让这个app看起来多样化，也就是绚丽多彩的功能。
+可是后来发现，是我们把这个功能复杂化了，完全没有必要分4个场景的需要，就改成了一个。事实也证明这个简化是正确的，不但程序写起来方便了很多，而且根据现在的用户体验来讲，这个简化也是符合大流的。&lt;br /&gt;
+我们的目的是为了让用户合拍，用户更在意的是和哪个明星，至于背景是什么，那是次要的，稍微唯美一点就基本都能接受了，不需要特别的绚丽多样。&lt;/li&gt;
+  &lt;li&gt;登陆的界面，我们一共用了3个，新浪、QQ、人人。当时微信没那么火，在之后的版本中，我们把人人删了，增加了微信和手机号码。
+这里我想说的是，在用第三方账号登陆的时候，尽量用native的，就是会跳转到那个app，而不要弹出一个界面让用户来输入用户名和密码之类的。
+我们一开始做的是弹界面的，真的觉得很麻烦。&lt;/li&gt;
+  &lt;li&gt;语音功能我们是一开始加进去的，后来发现大多数的用户还是偏向于用文字，语音的真的很少。
+所以我在之后的项目中，客户如果不是特别需要，语音功能都是在2.0之后的版本才有的。&lt;/li&gt;
+  &lt;li&gt;断网情况下用户是没法使用app的。这个究其原因还是我们实力不是很优秀以及但是sdk不是很完善。但是还是ios5到ios6的过度，本地保存数据的功能还处于待开发的阶段。
+为了防止断网情况下的各种bug和闪退，但是就弹出登陆界面，让用户无法进入app，这个也是但是很多其他app处理断网的方法。
+当然，这是一个很不好的用户体验，随着之后不断的发展，除了支付宝和各种手机银行的app等，几乎所有应用都支持断网使用。&lt;br /&gt;
+这里也要感谢苹果的攻城狮的努力，才使得我们的开发变的越来越容易和简洁。&lt;/li&gt;
+  &lt;li&gt;这个app在2013-11-09最后一次更新后就再也没有更新了，也就是宣告了失败。想想原因也就是运营的失败和产品本身没有足够的好，
+再加上微信的迅猛发展，失败也是在情理之中的。&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+   </entry>
+   
+   <entry>
      <title>如何提升用户体验？手游用户的6个游戏阶段【转】</title>
-     <link href="http://beiyuu.com/%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C"/>
+     <link href="http://beiyuu.com/blog/2015/03/20/%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C.html"/>
      <updated>2015-03-20T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/如何提升用户体验</id>
-     <content type="html">&lt;blockquote&gt;&lt;p&gt;&lt;a href = &quot;http://www.sykong.com/2015/03/55385&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;转自：http://www.sykong.com/2015/03/55385&lt;/a&gt;
-&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
+     <id>http://beiyuu.com/blog/2015/03/20/如何提升用户体验</id>
+     <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://www.sykong.com/2015/03/55385&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;转自：http://www.sykong.com/2015/03/55385&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;div class=&quot;text&quot;&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.sykong.com/wp-content/uploads/2015/03/162.jpg&quot; class=&quot;thickbox&quot; rel=&quot;gallery-55385&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-55387&quot; src=&quot;http://www.sykong.com/wp-content/uploads/2015/03/162.jpg&quot; alt=&quot;干货 | 如何提升用户体验？手游用户的6个游戏阶段&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.sykong.com/wp-content/uploads/2015/03/162.jpg&quot; class=&quot;thickbox&quot; rel=&quot;gallery-55385&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-55387&quot; src=&quot;http://www.sykong.com/wp-content/uploads/2015/03/162.jpg&quot; alt=&quot;干货 | 如何提升用户体验？手游用户的6个游戏阶段&quot; width=&quot;600&quot; height=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;体验是一个很难描述的东西，我们经常假设玩家的体验跟我们游戏从业者的体验是一致的。但是很多情况下，我们从业者的游戏体验不等于玩家的游戏体验。因为从业者的用户属性和主流玩家的用户属性是不同的。下面就脱离游戏设计，介绍一下玩家玩游戏的6个体验阶段：&lt;/p&gt;
 &lt;p&gt;&lt;span style=&quot;color: #07a08a;&quot;&gt;&lt;strong&gt;阶段一：要不要玩?&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;阶段一就是玩家选择游戏的过程，我们先排除口碑相传带来的新用户，因为这个时分考验游戏的综合实力，所以这里我们只把场景放在一个特定的场景：用户在应用商店中寻找游戏时！&lt;/p&gt;
@@ -83,88 +167,73 @@
 &lt;p&gt;一周之后，游戏大部分的内容玩家都已经玩过了并且很熟悉了，或者说已经枯燥了。虽然没有将游戏内容全部消耗完(打通所有副本，获得所有武将……)但是玩家对现有内容已经提不起兴趣了。&lt;/p&gt;
 &lt;p&gt;巴特尔将游戏用户分为4类：成就者，探险家，社交家，杀手。长期来看，成就和探索是很难满足的，因为他们高度依赖游戏内容。社交家和杀手的需求是可以持续满足的，因为他们不消耗游戏内容，只有有玩家，有竞争，就能持续满足这2类用户的需求。所以很多游戏在很末期的时候，用户上游戏不是为了玩游戏，而是进游戏跟这些战友聊聊天。&lt;/p&gt;
   &lt;/div&gt;
-
 </content>
    </entry>
    
    <entry>
      <title>Hello World</title>
-     <link href="http://beiyuu.com/hello-world"/>
+     <link href="http://beiyuu.com/blog/2015/03/18/hello-world.html"/>
      <updated>2015-03-18T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/hello-world</id>
+     <id>http://beiyuu.com/blog/2015/03/18/hello-world</id>
      <content type="html">&lt;blockquote&gt;&lt;p style=&quot;
     color: gray;
 &quot;&gt;某程序员退休后决定练习书法，于是重金购买文房四宝。一日，饭后突生雅兴，一番研墨拟纸，并点上上好檀香。定神片刻，泼墨挥毫，郑重地写下一行字：hello world!&lt;/p&gt;&lt;/blockquote&gt;
 
-
-&lt;h2&gt;感谢&lt;/h2&gt;
-
+&lt;h2 id=&quot;section&quot;&gt;感谢&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;感谢Github提供这样一个写博客的平台&lt;/li&gt;
-&lt;li&gt;感谢我的码友兼高中同桌&lt;a href=&quot;http://kimmykuang.github.io/&quot;&gt;Kimmy&lt;/a&gt;帮助我搭建这个博客&lt;/li&gt;
+  &lt;li&gt;感谢Github提供这样一个写博客的平台&lt;/li&gt;
+  &lt;li&gt;感谢我的码友兼高中同桌&lt;a href=&quot;http://kimmykuang.github.io/&quot;&gt;Kimmy&lt;/a&gt;帮助我搭建这个博客&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;h2&gt;如何用 Github 建立个人博客&lt;/h2&gt;
-
+&lt;h2 id=&quot;github-&quot;&gt;如何用 Github 建立个人博客&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Mac 环境
-
-&lt;ul&gt;
-&lt;li&gt;搭建好 Github 环境 &lt;a href=&quot;https://help.github.com/articles/set-up-git/&quot;&gt;安装教程&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;新建一个 Repository 名字叫 yourname.github.io&lt;/li&gt;
-&lt;li&gt;提交一个 index.html 文件，然后 push 到 GitHub 的 master 分支&lt;/li&gt;
-&lt;li&gt;访问 yourname.github.io 就可以看到你上传的页面了&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+  &lt;li&gt;Mac 环境
+    &lt;ul&gt;
+      &lt;li&gt;搭建好 Github 环境 &lt;a href=&quot;https://help.github.com/articles/set-up-git/&quot;&gt;安装教程&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;新建一个 Repository 名字叫 yourname.github.io&lt;/li&gt;
+      &lt;li&gt;提交一个 index.html 文件，然后 push 到 GitHub 的 master 分支&lt;/li&gt;
+      &lt;li&gt;访问 yourname.github.io 就可以看到你上传的页面了
+&lt;!-- + 本人是写ios出生，第一次建立网页，具体参考[这篇文章][link1] --&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;!-- + 本人是写ios出生，第一次建立网页，具体参考[这篇文章][link1] --&gt;
-
-
-&lt;h2&gt;本地调试&lt;/h2&gt;
-
+&lt;h2 id=&quot;section-1&quot;&gt;本地调试&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Mac 环境
+  &lt;li&gt;Mac 环境
+    &lt;ul&gt;
+      &lt;li&gt;安装 jekyll &lt;a href=&quot;http://kimmykuang.github.io/local-jekyll.html&quot;&gt;本地Jekyll环境的搭建&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;打开 terminal 输入 &lt;code&gt;jekyll -v&lt;/code&gt; 查看版本&lt;/li&gt;
+    &lt;/ul&gt;
 
-&lt;ul&gt;
-&lt;li&gt;安装 jekyll &lt;a href=&quot;http://kimmykuang.github.io/local-jekyll.html&quot;&gt;本地Jekyll环境的搭建&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;打开 terminal 输入 &lt;code&gt;jekyll -v&lt;/code&gt; 查看版本&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+    &lt;pre class=&quot;prettyprint linenums&quot;&gt;
   $ jekyll -v
   jekyll 2.5.3
-&lt;/pre&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;在 terminal 里 cd 到项目目录，输入 &lt;code&gt;jekyll serve --watch&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;浏览器访问 http://localhost:4000 即可&lt;/li&gt;
+&lt;/pre&gt;
+    &lt;ul&gt;
+      &lt;li&gt;在 terminal 里 cd 到项目目录，输入 &lt;code&gt;jekyll serve --watch&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;浏览器访问 http://localhost:4000 即可&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 
-
-&lt;h2&gt;参考&lt;/h2&gt;
-
-&lt;blockquote&gt;&lt;p&gt;&lt;a href = &quot;http://beiyuu.com/github-pages&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;http://beiyuu.com/github-pages&lt;/a&gt;
-&lt;br&gt;
-&lt;a href = &quot;http://kimmykuang.github.io/local-jekyll.html&quot;&gt;http://kimmykuang.github.io/local-jekyll.html&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&quot;section-2&quot;&gt;参考&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://beiyuu.com/github-pages&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;http://beiyuu.com/github-pages&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://kimmykuang.github.io/local-jekyll.html&quot;&gt;http://kimmykuang.github.io/local-jekyll.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;!-- 注释 --&gt;
-
-
 
 </content>
    </entry>
    
    <entry>
      <title>豆瓣FM(iOS 3.0)使用体会</title>
-     <link href="http://beiyuu.com/douban-fm"/>
+     <link href="http://beiyuu.com/opinion/2013/06/06/douban-fm.html"/>
      <updated>2013-06-06T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/douban-fm</id>
+     <id>http://beiyuu.com/opinion/2013/06/06/douban-fm</id>
      <content type="html">&lt;p&gt;豆瓣FM发布了全新设计的3.0版本，很多Feature不错：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -173,22 +242,23 @@
     &lt;li&gt;终于有歌词啦&lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;p&gt;使用中总结了一些体会，非常感性、毫无逻辑可言，看看就好：&lt;/p&gt;
 
-&lt;h2&gt;产品定位&lt;/h2&gt;
+&lt;h2 id=&quot;section&quot;&gt;产品定位&lt;/h2&gt;
 
 &lt;p&gt;豆瓣FM的产品定位，摘抄如下：&lt;/p&gt;
 
-&lt;blockquote&gt;&lt;p&gt;它简单、易用，熟悉每个用户的脾气秉性，又能够聚合集体的智慧。无论是在家里、工作场所、咖啡厅还是交通工具上，无论是在休息、等候、娱乐还是工作时，它都能够提供完美、一致的体验。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;它简单、易用，熟悉每个用户的脾气秉性，又能够聚合集体的智慧。无论是在家里、工作场所、咖啡厅还是交通工具上，无论是在休息、等候、娱乐还是工作时，它都能够提供完美、一致的体验。&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;大家对推荐都满意，算法就不说了。简单易用来讲，国内的音乐APP中(虾米、QQ、百度等)，只有豆瓣是打开就播放，确实简单易用。&lt;/p&gt;
 
 &lt;p&gt;这样的打开播放的产品定位下，使用场景就有些变化了。&lt;/p&gt;
 
-&lt;h2&gt;交互框架&lt;/h2&gt;
+&lt;h2 id=&quot;section-1&quot;&gt;交互框架&lt;/h2&gt;
 
-&lt;h3&gt;引导页&lt;/h3&gt;
+&lt;h3 id=&quot;section-2&quot;&gt;引导页&lt;/h3&gt;
 
 &lt;p&gt;从App引导开始，新版FM就想让用户熟悉上下拉动的操作。&lt;/p&gt;
 
@@ -198,7 +268,7 @@
 
 &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8b8af2c8jw1e5eqcvmp9gj20oq0lp408.jpg&quot; alt=&quot;splash&quot; /&gt;&lt;/p&gt;
 
-&lt;h3&gt;上下拉&lt;/h3&gt;
+&lt;h3 id=&quot;section-3&quot;&gt;上下拉&lt;/h3&gt;
 
 &lt;p&gt;自从抽屉式导航普及开来之后，横滑展开设置成为一种默认操作。&lt;/p&gt;
 
@@ -210,7 +280,7 @@
 
 &lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8b8af2c8jw1e5eqd2xcj9j20oq0lpjv1.jpg&quot; alt=&quot;slide&quot; /&gt;&lt;/p&gt;
 
-&lt;h2&gt;设计细节&lt;/h2&gt;
+&lt;h2 id=&quot;section-4&quot;&gt;设计细节&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;封面不清晰&lt;/li&gt;
@@ -225,7 +295,6 @@
 &lt;li&gt;也是琢磨了半天才知道，点头像是进入设置。&lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8b8af2c8jw1e5eqd8tkg5j20oq0lpjti.jpg&quot; alt=&quot;slide&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;再重复一下，APP引导太可怕了！ 我说的全是废话，因为这个版本发布后，看起来好评如潮，哎。&lt;/p&gt;
@@ -234,10 +303,10 @@
    
    <entry>
      <title>史蒂夫·乔布斯：遗失的访谈</title>
-     <link href="http://beiyuu.com/jobs-interview"/>
+     <link href="http://beiyuu.com/opinion/2013/05/14/jobs-interview.html"/>
      <updated>2013-05-14T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/jobs-interview</id>
-     <content type="html">&lt;h2&gt;1、做公司就是做产品&lt;/h2&gt;
+     <id>http://beiyuu.com/opinion/2013/05/14/jobs-interview</id>
+     <content type="html">&lt;h2 id=&quot;section&quot;&gt;1、做公司就是做产品&lt;/h2&gt;
 
 &lt;p&gt;乔布斯从12岁开始，就捣鼓着好玩有用的产品，在惠普兼职的那些日子，也让他体会到了科技的魅力，原来凭一个人的力量也可以有如此之大的影响力，也是在惠普他认识了沃兹尼亚克。&lt;/p&gt;
 
@@ -249,7 +318,7 @@
 
 &lt;p&gt;光靠流程和制度，是不能让公司持续成功的，必须全心全意放在产品上。&lt;/p&gt;
 
-&lt;h2&gt;2、如何使公司良好运转&lt;/h2&gt;
+&lt;h2 id=&quot;section-1&quot;&gt;2、如何使公司良好运转&lt;/h2&gt;
 
 &lt;p&gt;对于传统行业来说，最好和普通之间，差距可能就是百分之几十的样子，但是对科技行业来说，最好的与普通的人才，能力的差距可能达百倍，所以一流的公司需要一流的人才，一流的人才也愿意与一流的人才共事。&lt;/p&gt;
 
@@ -257,7 +326,7 @@
 
 &lt;p&gt;大约这就是他被谣传暴戾的原因吧，从访谈中可以看的出，他确实不太在乎事实之外的东西，他自己也会犯错，别人也可以说服他，只要基于事实就好。&lt;/p&gt;
 
-&lt;h2&gt;3、品位问题&lt;/h2&gt;
+&lt;h2 id=&quot;section-2&quot;&gt;3、品位问题&lt;/h2&gt;
 
 &lt;p&gt;毫无疑问，乔布斯的品位很好，他认为和在大学时旁听排版课程的关系密不可分，的确，内容永远都是最重要的，并且，字体设计那些细致入微的细节，也对他有很深的影响。&lt;/p&gt;
 
@@ -273,58 +342,67 @@
 
 &lt;!--&lt;iframe height=&quot;498&quot; width=&quot;510&quot; src=&quot;http://player.youku.com/embed/XNTUxNDY1NDY4&quot; frameborder=&quot;0&quot; style=&quot;margin:0 auto&quot;&gt;&lt;/iframe&gt;--&gt;
 
-
-
-
 &lt;div style=&quot;text-align:center&quot;&gt;
-&lt;embed src=&quot;http://player.youku.com/player.php/sid/XNTUxNDY1NDY4/v.swf&quot; allowFullScreen=&quot;true&quot; quality=&quot;high&quot; width=&quot;480&quot; height=&quot;400&quot; align=&quot;middle&quot; allowScriptAccess=&quot;always&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;/embed&gt;
+&lt;embed src=&quot;http://player.youku.com/player.php/sid/XNTUxNDY1NDY4/v.swf&quot; allowfullscreen=&quot;true&quot; quality=&quot;high&quot; width=&quot;480&quot; height=&quot;400&quot; align=&quot;middle&quot; allowscriptaccess=&quot;always&quot; type=&quot;application/x-shockwave-flash&quot; /&gt;
 &lt;/div&gt;
-
 </content>
    </entry>
    
    <entry>
      <title>Tabby</title>
-     <link href="http://beiyuu.com/tabby"/>
+     <link href="http://beiyuu.com/project/2013/04/12/tabby.html"/>
      <updated>2013-04-12T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/tabby</id>
+     <id>http://beiyuu.com/project/2013/04/12/tabby</id>
      <content type="html">&lt;p&gt;用&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot;&gt;Tabby&lt;/a&gt;有一阵子了，最近把细节完善，发布在了Chrome Store。&lt;/p&gt;
 
 &lt;p&gt;他的功能是，当你打开几十上百个Chrome标签，很占资源，不想加入书签，也不想存入Instapaper等Read It Later的东西，只看一次，但就是不想现在看，这时候只要在页面点击右键，选择“暂存到Tabby”即可。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-pro1.png&quot; alt=&quot;Tabby&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-pro1.png&quot; alt=&quot;Tabby&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;你可以设置使用快捷键（默认关闭），要打开暂存的标签，只需点击Tabby的图标。因为使用了Chrome的书签，即使你卸载插件，还没来得及看的也不会丢失，也会默认同步到别的设备。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-pro2.png&quot; alt=&quot;Tabby&quot; &gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-pro2.png&quot; alt=&quot;Tabby&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;推荐一本书&lt;a href=&quot;http://read.douban.com/ebook/709141/?referral_code=e6acsgl3&quot; title=&quot;我是个年轻人，我心情不太好&quot;&gt;我是个年轻人，我心情不太好&lt;/a&gt;，当时是他的简介让我动心了一下：&lt;/p&gt;
 
-&lt;blockquote&gt;&lt;p&gt;我25岁，读过一个硕士，但是退学了。我被时间、空间、意义这些事情烦扰着。我知道的东西多得难以置信。我知道名字，年份。数以百计。我知道谁第一个上的珠穆朗玛峰。我知道谁导演了那些美国最蹩脚的肥皂剧。我知道亚里士多德讲的话是啥意思。我知道时间在太阳上会走得慢一点……&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;我25岁，读过一个硕士，但是退学了。我被时间、空间、意义这些事情烦扰着。我知道的东西多得难以置信。我知道名字，年份。数以百计。我知道谁第一个上的珠穆朗玛峰。我知道谁导演了那些美国最蹩脚的肥皂剧。我知道亚里士多德讲的话是啥意思。我知道时间在太阳上会走得慢一点……&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;但是，我知道这些有什么意义呢？&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;但是，我知道这些有什么意义呢？&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;我的生活仍旧是一团糟。&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;我的生活仍旧是一团糟。&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;不，连一团糟都不是，它是一片空白。&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;不，连一团糟都不是，它是一片空白。&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;我没有女朋友，甚至没有很好很好的朋友。我有一个哥哥，还有一个比我小很多、还在上幼儿园的“伙伴”。可他们也不算是朋友。&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;我没有女朋友，甚至没有很好很好的朋友。我有一个哥哥，还有一个比我小很多、还在上幼儿园的“伙伴”。可他们也不算是朋友。&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;要是我能有一种非常靠谱的感觉，觉得一切都会好起来，那该多好。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;要是我能有一种非常靠谱的感觉，觉得一切都会好起来，那该多好。&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;不指望这本书能喂你多大一碗鸡汤，就是让你知道这个年纪的共同态，而且或许有解决办法。&lt;/p&gt;
 
 &lt;p&gt;好吧，去下载插件吧：
-&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-440.png&quot; alt=&quot;Tabby&quot; width=&quot;300&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-440.png&quot; alt=&quot;Tabby&quot; width=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
 </content>
    </entry>
    
    <entry>
      <title>40届全美音乐奖和55届格莱美颁奖演出观感</title>
-     <link href="http://beiyuu.com/40-ama-55-grammy"/>
+     <link href="http://beiyuu.com/opinion/2013/02/19/40-ama-55-grammy.html"/>
      <updated>2013-02-19T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/40-ama-55-grammy</id>
-     <content type="html">&lt;h2&gt;40届全美音乐奖(Ameican Musican Awards)&lt;/h2&gt;
+     <id>http://beiyuu.com/opinion/2013/02/19/40-ama-55-grammy</id>
+     <content type="html">&lt;h2 id=&quot;ameican-musican-awards&quot;&gt;40届全美音乐奖(Ameican Musican Awards)&lt;/h2&gt;
 
 &lt;p&gt;1、少了英伦小清新的全美音乐奖，总体来说还是俗气了些；&lt;/p&gt;
 
@@ -345,11 +423,10 @@
 &lt;p&gt;9、Galaxy Note II强势插入的广告，脑补两年前格莱美的iPad广告；&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;margin-bottom:50px;&quot;&gt;
-&lt;embed src=&quot;http://player.youku.com/player.php/sid/XNDc3MTQzMjg0/v.swf&quot; quality=&quot;high&quot; width=&quot;480&quot; height=&quot;400&quot; align=&quot;middle&quot; allowScriptAccess=&quot;sameDomain&quot; allowFullscreen=&quot;true&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;/embed&gt;
+&lt;embed src=&quot;http://player.youku.com/player.php/sid/XNDc3MTQzMjg0/v.swf&quot; quality=&quot;high&quot; width=&quot;480&quot; height=&quot;400&quot; align=&quot;middle&quot; allowscriptaccess=&quot;sameDomain&quot; allowfullscreen=&quot;true&quot; type=&quot;application/x-shockwave-flash&quot; /&gt;
 &lt;/div&gt;
 
-
-&lt;h2&gt;55届格莱美(Grammy)颁奖&lt;/h2&gt;
+&lt;h2 id=&quot;grammy&quot;&gt;55届格莱美(Grammy)颁奖&lt;/h2&gt;
 
 &lt;p&gt;1、今年的格莱美，老将大都歇菜了，对新人感情积累不够，没法High起来，平淡的Happy一下吧；&lt;/p&gt;
 
@@ -382,19 +459,17 @@
 &lt;p&gt;15、说起来格莱美这两年都比较low，你说没有Coldplay没有Usher没有Katy Perry没有Lady Gaga没有Justin Bieber没有Black Eyed Peas没有Eminem，连鸟叔都没有，你还让我怎么看，期待明年会更好吧！&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center&quot;&gt;
-&lt;embed src=&quot;http://player.youku.com/player.php/sid/XNTEzNzI1Njcy/v.swf&quot; quality=&quot;high&quot; width=&quot;480&quot; height=&quot;400&quot; align=&quot;middle&quot; allowScriptAccess=&quot;sameDomain&quot; allowFullscreen=&quot;true&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;/embed&gt;
+&lt;embed src=&quot;http://player.youku.com/player.php/sid/XNTEzNzI1Njcy/v.swf&quot; quality=&quot;high&quot; width=&quot;480&quot; height=&quot;400&quot; align=&quot;middle&quot; allowscriptaccess=&quot;sameDomain&quot; allowfullscreen=&quot;true&quot; type=&quot;application/x-shockwave-flash&quot; /&gt;
 &lt;/div&gt;
-
-
 
 </content>
    </entry>
    
    <entry>
      <title>只有好的棋手才会走运</title>
-     <link href="http://beiyuu.com/build-facebook"/>
+     <link href="http://beiyuu.com/opinion/2013/01/21/build-facebook.html"/>
      <updated>2013-01-21T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/build-facebook</id>
+     <id>http://beiyuu.com/opinion/2013/01/21/build-facebook</id>
      <content type="html">&lt;p&gt;能和Facebook这样的公司一起成长太幸福，对作者真是羡慕嫉妒恨。&lt;/p&gt;
 
 &lt;p&gt;Facebook快速并且顺利的成长，作者初期选择他，悬念并不大，不过在第一章谈到对公司的忠诚度倒是个不错的话题，树倒猢狲散、墙倒众人推，这就是现实，更何况赤裸裸的签订的打工合同，每个人都会做对自己最有利的选择，同样的，公司招聘也不是做慈善，所以忠诚在这里的定义是，在职期间尽心尽力做到自己该做的事情。&lt;/p&gt;
@@ -412,8 +487,8 @@
 &lt;p&gt;多废话一句：在我看来，豆瓣和Facebook有许多的相似之处，或许这只是我一厢情愿吧，哈哈。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;豆瓣链接：&lt;a href=&quot;http://book.douban.com/subject/20471120/&quot; title=&quot;打造Facebook&quot;&gt;《打造Facebook》&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;在线阅读：&lt;a href=&quot;http://read.douban.com/ebook/500486/?referral_code=myg7ot50&quot;&gt;《打造Facebook》&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;豆瓣链接：&lt;a href=&quot;http://book.douban.com/subject/20471120/&quot; title=&quot;打造Facebook&quot;&gt;《打造Facebook》&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;在线阅读：&lt;a href=&quot;http://read.douban.com/ebook/500486/?referral_code=myg7ot50&quot;&gt;《打造Facebook》&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 </content>
@@ -421,9 +496,9 @@
    
    <entry>
      <title>令人焦虑的列表设计</title>
-     <link href="http://beiyuu.com/bad-list-design"/>
+     <link href="http://beiyuu.com/opinion/2013/01/17/bad-list-design.html"/>
      <updated>2013-01-17T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/bad-list-design</id>
+     <id>http://beiyuu.com/opinion/2013/01/17/bad-list-design</id>
      <content type="html">&lt;p&gt;用列表展现数据，再平常不过了，想想通讯录、微薄、播放列表、博客目录，都是。&lt;/p&gt;
 
 &lt;p&gt;先来看看全宇宙最奇葩、但是自认为全世界最好用的软件iTunes的播放列表：&lt;/p&gt;
@@ -451,86 +526,6 @@
 &lt;p&gt;未读、已读一目了然，还感叹过为什么把未读扫过就一点不想再多看了呢，仅仅改变背景色和字体就轻松达到这个目标，这就是好的设计。&lt;/p&gt;
 
 &lt;p&gt;哦，顺道吐槽一下傻逼的所谓欧洲时间格式，你能分清02/10/08和03/09/06里面的年月日吗？&lt;/p&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>胡言乱语说简单</title>
-     <link href="http://beiyuu.com/about-simplify"/>
-     <updated>2013-01-08T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/about-simplify</id>
-     <content type="html">&lt;h2&gt;最初的简单&lt;/h2&gt;
-
-&lt;p&gt;从第一代iPhone出来，简单这个概念，便疯样的传开来。我怀疑过这是否绝对正确，最终还是服了。&lt;/p&gt;
-
-&lt;p&gt;碎片化的生活让人类的注意力很难集中3分钟，且有千千万的选择，任何一点负面的感受，会立刻遭到用户唾弃。物质、文化匮乏的时代，故作繁杂，可以脱颖而出，但现在能打动你的肯定是左边。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/bmiddle/5e0bba51gw1dyxy98zixmj.jpg&quot; alt=&quot;Apple Remote&quot; /&gt;&lt;/p&gt;
-
-&lt;h2&gt;简单才可依赖&lt;/h2&gt;
-
-&lt;p&gt;有些句子，看起来懂，也经常说，比如上面标题这句，但当我看到&lt;a href=&quot;http://v.youku.com/v_show/id_XNDkwMTg0MDI0.html&quot;&gt;《差速器原理》&lt;/a&gt;的视频时，才真正懂了这句话：&lt;/p&gt;
-
-&lt;p style=&quot;text-align:center&quot;&gt;&lt;embed src=&quot;http://player.youku.com/player.php/sid/XNDkwMTg0MDI0/v.swf&quot; quality=&quot;high&quot; width=&quot;480&quot; height=&quot;400&quot; align=&quot;middle&quot; allowScriptAccess=&quot;sameDomain&quot; allowFullscreen=&quot;true&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;/embed&gt;&lt;/p&gt;
-
-
-&lt;h2&gt;蔓延的简单&lt;/h2&gt;
-
-&lt;p&gt;大概是工作的关系，渐渐追求简单的思维蔓延到了生活中，甚至到了本没有标准的艺术范畴。来看下图：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://img1.bitautoimg.com/autoalbum/files/20120319/123/23575912395576_1844692_7.jpg&quot; alt=&quot;Focus Inside&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;搭朋友的车，这中控系统功能确实强大，但是不得不说这界面的设计师，还活在上个世纪，早该被解雇了。只因这不是选车最值得考虑的部分，不然朋友肯定会选择更好的。&lt;/p&gt;
-
-&lt;p&gt;甚至到了没有标准的艺术范畴，简单都成了标准：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/large/a74eed94jw1e0mmo1xa2kj.jpg&quot; alt=&quot;My Photo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;也不知是否因为我看娱乐节目太多，导致智商降低，对于文学、电影作品，甚至都不能接受故弄玄虚，我不愿去想，也不愿去猜。比如&lt;a href=&quot;http://movie.douban.com/subject/3821067/&quot;&gt;《一代宗师》&lt;/a&gt;故事支离破碎，台词游离，就连王家卫最拿手的气氛渲染，也比&lt;a href=&quot;http://movie.douban.com/subject/1291557/&quot;&gt;《花样年华》&lt;/a&gt;差远了。复杂了，失焦了，我也没有耐心去思索。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/bmiddle/62275834jw1e0mlp67dv4j.jpg&quot; alt=&quot;The Grandmasters&quot; /&gt;&lt;/p&gt;
-
-&lt;h2&gt;简单的背后&lt;/h2&gt;
-
-&lt;p&gt;做加法很容易，把所见所想全写上就好，做到简单却要经过谨慎的思考。&lt;/p&gt;
-
-&lt;p&gt;简单的背后不应该是简陋。对比&lt;a href=&quot;http://douban.fm/&quot;&gt;豆瓣FM&lt;/a&gt;和&lt;a href=&quot;http://xiami.fm/&quot;&gt;虾米FM&lt;/a&gt;就能理解，豆瓣FM简陋的背后带来了无尽的不安全感，无法控制的挫败感，纵然你能满足大部分用户，但也绝不应该放弃更苛刻的用户，因为作为创造者，你自己也是那些苛求的需要者。&lt;/p&gt;
-
-&lt;p&gt;当然，我知道豆瓣FM有他的苦衷，只是举个例子，做减法并不是舍弃，而是合理的隐藏。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/a74ecc4cjw1e0mnhp3ijtj.jpg&quot; alt=&quot;The Next Day&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/us/app/next-day/id491352621?mt=8&quot;&gt;Next Day&lt;/a&gt;就是这样，简单美妙，但是当你想要更多的时候，控制权也完全交到你手中，并且很高效。&lt;/p&gt;
-
-&lt;h2&gt;TL;DR&lt;/h2&gt;
-
-&lt;p&gt;错过这篇废话而无用的文章，你是赚到啦！&lt;/p&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>随内容滚动隐藏的工具栏</title>
-     <link href="http://beiyuu.com/auto-edit-bar"/>
-     <updated>2012-12-27T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/auto-edit-bar</id>
-     <content type="html">&lt;p&gt;最先在&lt;a href=&quot;https://itunes.apple.com/us/app/google+/id447119634?mt=8&quot;&gt;Google+&lt;/a&gt;的APP上看到这种交互细节，而后在&lt;a href=&quot;http://www.meilishuo.com/welcome&quot;&gt;美丽说&lt;/a&gt;的新版上也看到了，上图：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/other/auto-edit-bar.jpg&quot; alt=&quot;Auto Edit Bar&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;图中画蓝色线框的部分既是。打开APP，下面的工具栏部分是显示的，当手指滑动内容，如果是向下浏览更多内容，工具栏自动收起，如果向上回滚，工具栏又会显示。&lt;/p&gt;
-
-&lt;p&gt;好处显而易见，当APP认为你在浏览，收起留出更多的屏幕空间，不遮挡、影响内容的显示，需要时再出现。&lt;/p&gt;
-
-&lt;p&gt;起初看到这个交互，还有些不习惯，体会到他的优势之后，顿时又觉得不支持这样的APP实在太out。&lt;/p&gt;
-
-&lt;p&gt;Google+和美丽说还有些不同的细节：&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;Google+是在手指动作触发刚开始时就起效，而美丽说做在了手指滑动之后，因为有个缓冲时间，所以略感迟钝。&lt;/li&gt;
-    &lt;li&gt;美丽说在工具栏收起之后，留有一个小按钮，其实当用户熟悉这个交互后，略显多余。&lt;/li&gt;
-&lt;/ul&gt;
-
-
 
 </content>
    </entry>

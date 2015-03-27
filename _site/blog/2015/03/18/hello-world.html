@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         BeiYuu
+    -->
+    <meta charset="utf-8" />
+    <title>Sylar</title>
+    <meta name="author" content="Sylar" />
+    <meta name="description" content="Sylar's Blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="" />
+    <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="home-menu">
+        <div class="home-icon-con">
+            <a class="home-menu-icon" href="/">Sylar</a>
+            <a class="home-follow" href="#" title="Contact Me">+</a>
+        </div>
+        <div class="home-contact">
+            <a href="http://weibo.com/beiyuu/" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
+            <a href="http://www.douban.com/people/beiyuu/" target="_blank" style="text-align:center;"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
+            <a href="http://instagram.com/beiyuu/" target="_blank" style="text-align:right"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="/js/prettify/prettify.css" />
+<style type="text/css">
+    body { background:#e8e8e8; }
+    @media screen and (max-width: 750px){
+        body { background:#fff; }
+    }
+    @media screen and (max-width: 1020px){
+        body { background:#fff; }
+    }
+</style>
+
+<div id="content">
+    <div class="entry">
+        <h1 class="entry-title"><a href="/blog/2015/03/18/hello-world.html" title="Hello World">Hello World</a></h1>
+        <p class="entry-date">2015-03-18</p>
+        <blockquote><p style="
+    color: gray;
+">某程序员退休后决定练习书法，于是重金购买文房四宝。一日，饭后突生雅兴，一番研墨拟纸，并点上上好檀香。定神片刻，泼墨挥毫，郑重地写下一行字：hello world!</p></blockquote>
+
+<h2 id="section">感谢</h2>
+<ul>
+  <li>感谢Github提供这样一个写博客的平台</li>
+  <li>感谢我的码友兼高中同桌<a href="http://kimmykuang.github.io/">Kimmy</a>帮助我搭建这个博客</li>
+</ul>
+
+<h2 id="github-">如何用 Github 建立个人博客</h2>
+<ul>
+  <li>Mac 环境
+    <ul>
+      <li>搭建好 Github 环境 <a href="https://help.github.com/articles/set-up-git/">安装教程</a></li>
+      <li>新建一个 Repository 名字叫 yourname.github.io</li>
+      <li>提交一个 index.html 文件，然后 push 到 GitHub 的 master 分支</li>
+      <li>访问 yourname.github.io 就可以看到你上传的页面了
+<!-- + 本人是写ios出生，第一次建立网页，具体参考[这篇文章][link1] --></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-1">本地调试</h2>
+<ul>
+  <li>Mac 环境
+    <ul>
+      <li>安装 jekyll <a href="http://kimmykuang.github.io/local-jekyll.html">本地Jekyll环境的搭建</a></li>
+      <li>打开 terminal 输入 <code>jekyll -v</code> 查看版本</li>
+    </ul>
+
+    <pre class="prettyprint linenums">
+  $ jekyll -v
+  jekyll 2.5.3
+</pre>
+    <ul>
+      <li>在 terminal 里 cd 到项目目录，输入 <code>jekyll serve --watch</code></li>
+      <li>浏览器访问 http://localhost:4000 即可</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-2">参考</h2>
+<blockquote>
+  <p><a href="http://beiyuu.com/github-pages" class="external" target="_blank">http://beiyuu.com/github-pages</a>
+<br />
+<a href="http://kimmykuang.github.io/local-jekyll.html">http://kimmykuang.github.io/local-jekyll.html</a></p>
+</blockquote>
+
+<!-- 注释 -->
+
+
+
+        <!-- <div id="disqus_container">
+            <div style="margin-bottom:20px" class="right">
+                <script type="text/javascript" charset="utf-8">
+                (function(){
+                  var _w = 86 , _h = 16;
+                  var param = {
+                    url:location.href,
+                    type:'6',
+                    count:'', /**是否显示分享数，1显示(可选)*/
+                    appkey:'', /**您申请的应用appkey,显示分享来源(可选)*/
+                    title:'', /**分享的文字内容(可选，默认为所在页面的title)*/
+                    pic:'', /**分享图片的路径(可选)*/
+                    ralateUid:'1855270953', /**关联用户的UID，分享微博会@该用户(可选)*/
+                    language:'zh_cn', /**设置语言，zh_cn|zh_tw(可选)*/
+                    rnd:new Date().valueOf()
+                  }
+                  var temp = [];
+                  for( var p in param ){
+                    temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
+                  }
+                  document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
+                })()
+                </script>
+            </div>
+            <a href="#" class="comment" onclick="return false;">点击查看评论</a>
+            <div id="disqus_thread"></div>
+        </div> -->
+    </div>
+
+<!--     <div class="sidenav">
+        <iframe width="100%" height="75" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=75&fansRow=2&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=1855270953&verifier=375b89d6&dpc=1"></iframe>
+    </div> -->
+
+    <div class = "sidenav" style=" margin-bottom: 20px">
+        <a href = "/"  style = "font-size: 33px;
+                                text-align: center;
+                                font-weight: 600;
+                                text-decoration: none;"> 返回主页 </a>
+    </div>
+
+    <div class="sidenav">
+        <h2>Blog</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/blog/2015/03/24/%E5%B0%8F%E7%99%BD%E5%AD%A6ruby.html">小白学ruby【基本语法持续更新中】</a></li>
+        
+            <li><a href="/blog/2015/03/24/%E5%90%88%E6%8B%8D%E5%90%A7.html">合拍吧——我的第一个创业项目</a></li>
+        
+            <li><a href="/blog/2015/03/20/%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C.html">如何提升用户体验？手游用户的6个游戏阶段【转】</a></li>
+        
+            <li><a href="/blog/2015/03/18/hello-world.html">Hello World</a></li>
+        
+        </ul>
+    </div>
+</div>
+
+<script src="/js/post.js" type="text/javascript"></script>
+
+
+    <!--*********************************************************-->
+    <!--****** 宝贝儿，看见这个时候，删掉下面的统计代码哦~ ******-->
+    <!--************* 再推荐下我的第一篇博客哦~~ ****************-->
+    <!--*********************************************************-->
+</body>
+</html>

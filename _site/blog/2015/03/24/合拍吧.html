@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         BeiYuu
+    -->
+    <meta charset="utf-8" />
+    <title>Sylar</title>
+    <meta name="author" content="Sylar" />
+    <meta name="description" content="Sylar's Blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="" />
+    <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="home-menu">
+        <div class="home-icon-con">
+            <a class="home-menu-icon" href="/">Sylar</a>
+            <a class="home-follow" href="#" title="Contact Me">+</a>
+        </div>
+        <div class="home-contact">
+            <a href="http://weibo.com/beiyuu/" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
+            <a href="http://www.douban.com/people/beiyuu/" target="_blank" style="text-align:center;"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
+            <a href="http://instagram.com/beiyuu/" target="_blank" style="text-align:right"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="/js/prettify/prettify.css" />
+<style type="text/css">
+    body { background:#e8e8e8; }
+    @media screen and (max-width: 750px){
+        body { background:#fff; }
+    }
+    @media screen and (max-width: 1020px){
+        body { background:#fff; }
+    }
+</style>
+
+<div id="content">
+    <div class="entry">
+        <h1 class="entry-title"><a href="/blog/2015/03/24/%E5%90%88%E6%8B%8D%E5%90%A7.html" title="合拍吧——我的第一个创业项目">合拍吧——我的第一个创业项目</a></h1>
+        <p class="entry-date">2015-03-24</p>
+        <h2 id="section">感谢</h2>
+<p>感谢 陈zt 和 朱dl 二位程序猿前辈带领我做的这个app
+<br />
+感谢 侯kl 把我安排到了这个项目</p>
+
+<h2 id="app">app简介</h2>
+<blockquote><p style="
+    color: gray; margin-bottom: 13px;
+">还在独自无聊自拍？别OUT了——21世纪，没有互动就没有照片！<br />
+快来使用这款史无前例的合拍神器吧！<br />
+•眼花缭乱的合拍相纸——能够让你和各式朋友交互创造出千奇百怪的合影照片！<br />
+•及时分享的动态页面——让你实时掌握朋友们的每个瞬间！<br />
+•收纳合理的照片相集——精确归类你的各色照片！<br />
+•及时畅快的聊天系统——保证与合拍的TA沟通无障碍！<br />
+•随时查看附近潮人——三种搜索形态，各式筛选规则，让寻找趣人趣照变的易如反掌！<br />
+•一目了然的排行榜——闪亮的自己总会被发现，万众瞩目就在此间！<br />
+“与女神合体，和白马共存”不再是梦想，一切可能尽在——合——拍——吧！</p></blockquote>
+
+<p>这个app主要功能就是能让普(屌)通(丝)人能和自己的明星合照（参考下图）
+<img src="/images/1/img_paba_1.png" alt="Alt text" />
+当然还包括了朋友圈聊天等基本的社交功能</p>
+
+<h2 id="section-1">制作感想</h2>
+<ul>
+  <li>主推的是拍照功能，当然这个功能肯定是大头，花了大部分时间做。一开始，我们设计了各种背景和蒙板，还区分了横竖屏幕以及手机的4个方向来适应我们不同的背景。
+目的是为了让这个app看起来多样化，也就是绚丽多彩的功能。
+可是后来发现，是我们把这个功能复杂化了，完全没有必要分4个场景的需要，就改成了一个。事实也证明这个简化是正确的，不但程序写起来方便了很多，而且根据现在的用户体验来讲，这个简化也是符合大流的。<br />
+我们的目的是为了让用户合拍，用户更在意的是和哪个明星，至于背景是什么，那是次要的，稍微唯美一点就基本都能接受了，不需要特别的绚丽多样。</li>
+  <li>登陆的界面，我们一共用了3个，新浪、QQ、人人。当时微信没那么火，在之后的版本中，我们把人人删了，增加了微信和手机号码。
+这里我想说的是，在用第三方账号登陆的时候，尽量用native的，就是会跳转到那个app，而不要弹出一个界面让用户来输入用户名和密码之类的。
+我们一开始做的是弹界面的，真的觉得很麻烦。</li>
+  <li>语音功能我们是一开始加进去的，后来发现大多数的用户还是偏向于用文字，语音的真的很少。
+所以我在之后的项目中，客户如果不是特别需要，语音功能都是在2.0之后的版本才有的。</li>
+  <li>断网情况下用户是没法使用app的。这个究其原因还是我们实力不是很优秀以及但是sdk不是很完善。但是还是ios5到ios6的过度，本地保存数据的功能还处于待开发的阶段。
+为了防止断网情况下的各种bug和闪退，但是就弹出登陆界面，让用户无法进入app，这个也是但是很多其他app处理断网的方法。
+当然，这是一个很不好的用户体验，随着之后不断的发展，除了支付宝和各种手机银行的app等，几乎所有应用都支持断网使用。<br />
+这里也要感谢苹果的攻城狮的努力，才使得我们的开发变的越来越容易和简洁。</li>
+  <li>这个app在2013-11-09最后一次更新后就再也没有更新了，也就是宣告了失败。想想原因也就是运营的失败和产品本身没有足够的好，
+再加上微信的迅猛发展，失败也是在情理之中的。</li>
+</ul>
+
+
+
+        <!-- <div id="disqus_container">
+            <div style="margin-bottom:20px" class="right">
+                <script type="text/javascript" charset="utf-8">
+                (function(){
+                  var _w = 86 , _h = 16;
+                  var param = {
+                    url:location.href,
+                    type:'6',
+                    count:'', /**是否显示分享数，1显示(可选)*/
+                    appkey:'', /**您申请的应用appkey,显示分享来源(可选)*/
+                    title:'', /**分享的文字内容(可选，默认为所在页面的title)*/
+                    pic:'', /**分享图片的路径(可选)*/
+                    ralateUid:'1855270953', /**关联用户的UID，分享微博会@该用户(可选)*/
+                    language:'zh_cn', /**设置语言，zh_cn|zh_tw(可选)*/
+                    rnd:new Date().valueOf()
+                  }
+                  var temp = [];
+                  for( var p in param ){
+                    temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
+                  }
+                  document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
+                })()
+                </script>
+            </div>
+            <a href="#" class="comment" onclick="return false;">点击查看评论</a>
+            <div id="disqus_thread"></div>
+        </div> -->
+    </div>
+
+<!--     <div class="sidenav">
+        <iframe width="100%" height="75" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=75&fansRow=2&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=1855270953&verifier=375b89d6&dpc=1"></iframe>
+    </div> -->
+
+    <div class = "sidenav" style=" margin-bottom: 20px">
+        <a href = "/"  style = "font-size: 33px;
+                                text-align: center;
+                                font-weight: 600;
+                                text-decoration: none;"> 返回主页 </a>
+    </div>
+
+    <div class="sidenav">
+        <h2>Blog</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/blog/2015/03/24/%E5%B0%8F%E7%99%BD%E5%AD%A6ruby.html">小白学ruby【基本语法持续更新中】</a></li>
+        
+            <li><a href="/blog/2015/03/24/%E5%90%88%E6%8B%8D%E5%90%A7.html">合拍吧——我的第一个创业项目</a></li>
+        
+            <li><a href="/blog/2015/03/20/%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C.html">如何提升用户体验？手游用户的6个游戏阶段【转】</a></li>
+        
+            <li><a href="/blog/2015/03/18/hello-world.html">Hello World</a></li>
+        
+        </ul>
+    </div>
+</div>
+
+<script src="/js/post.js" type="text/javascript"></script>
+
+
+    <!--*********************************************************-->
+    <!--****** 宝贝儿，看见这个时候，删掉下面的统计代码哦~ ******-->
+    <!--************* 再推荐下我的第一篇博客哦~~ ****************-->
+    <!--*********************************************************-->
+</body>
+</html>

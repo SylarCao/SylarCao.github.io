@@ -69,6 +69,9 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 .entry ol li{margin-bottom:5px;list-style:decimal;line-height:1.1em;}
 .entry blockquote{margin-left:25px;font-size:14px;font-style:italic}
 .entry img{max-width:670px;display:block;margin:10px auto;}
+/*********** my style *******************/
+.entry s1 { margin-bottom:10px; margin-left:25px}
+.entry scomment {margin-bottom:10px; margin-left:25px; font-style:italic; color:rgb(175, 175, 175);}
 
 
 .index-content .aside {
