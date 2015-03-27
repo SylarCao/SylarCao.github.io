@@ -5,8 +5,8 @@
 
 /* 重置浏览器CSS */
 html{color:#000;}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0;}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,right_aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0;}
+article,aside,right_aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 body,button,input,select,textarea{font-size:12px/1.5;}
 input,select,textarea{font-size:100%;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -86,9 +86,24 @@ pre ol{margin-left:25px;list-style-type:decimal;}
     background-size:cover;
     background-position:50% 50%;
 }
+
+.index-content .right_aside{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    max-width: 500px;
+    background:#000;
+    box-shadow:inset -1px 0 0 rgba(0,0,0,0.3);
+    background-size:cover;
+    background-position:50% 50%;
+    background-color: white;
+}
 .blog .aside{
     background-image:url(https://d233eq3e3p3cv0.cloudfront.net/max/1000/0*cF2i1ZosSP_UTJig.jpeg);
 }
+
 .opinion .aside{
     background-image:url(https://dnqgz544uhbo8.cloudfront.net/_/fp/img/bestof/june-2013.CaUUbO2jIECgCmldhmxCCA.jpg);
 }
