@@ -8,16 +8,16 @@
 <div>
 
 
-<div class = "class1">
+<div name = "name1" class = "class1">
 <h1> abcc </h1>
 </div>
 
 <input type = "button" onclick = "fun1()" value = "rrabbit"/>
 
-<input type = "text" value = "abc"/>
-
+<input type = "text" value = "abc" hidden = "true"/>
+<div class = "class2">
 <h2> this word is hidden </h2>
-
+</div>
 
 </div>
 </body>
@@ -26,18 +26,17 @@
 <script>
 
   function fun1(){
-    alert ("abc");
+    // name1.hidden = 'true';
+    $("div[class='class2']").hide();
   };
-
-
-
 
 
 
 </script>
 
 
-
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="/js/post.js" type="text/javascript"></script>
 
 
 
