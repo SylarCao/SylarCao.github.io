@@ -4,7 +4,7 @@
    <title></title>
    <link href="" rel="self" type="application/atom+xml"/>
    <link href="" rel="alternate" type="text/html" />
-   <updated>2015-03-30T17:25:24+08:00</updated>
+   <updated>2015-04-01T16:41:18+08:00</updated>
    <id></id>
    <author>
      <name></name>
@@ -50,15 +50,30 @@
 &lt;/p&gt;&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;ruby---random&quot;&gt;ruby - random数字&lt;/h2&gt;
-
 &lt;scomment&gt;# 随机一个 0-9 的数字&lt;/scomment&gt;
 &lt;p&gt;&lt;code&gt;random_number = Random.rand (10)&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;ruby---for-&quot;&gt;ruby - for 循环&lt;/h2&gt;
-&lt;scomment&gt; # for loop [1,10) &lt;/scomment&gt;
+&lt;scomment&gt; # for loop [1,10)   &lt;/scomment&gt;
+&lt;p style=&quot; line-height: 0px; margin-bottom: 10px; &quot;&gt;&lt;/p&gt;
+&lt;scomment&gt; # http://www.tutorialspoint.com/ruby/ruby_loops.htm &lt;/scomment&gt;
+
+&lt;p style=&quot; line-height: 0px; margin-bottom: 10px; &quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt; for i in 1...10&lt;/code&gt;&lt;/p&gt;
-&lt;scomment&gt;其他for, while, break 循环:  &lt;a href=&quot;http://www.tutorialspoint.com/ruby/ruby_loops.htm&quot;&gt;http://www.tutorialspoint.com/ruby/ruby_loops.htm&lt;/a&gt;
-&lt;/scomment&gt;
+
+&lt;h2 id=&quot;js---&quot;&gt;js - 时间戳和日期&lt;/h2&gt;
+&lt;scomment&gt;# moment 控件&lt;/scomment&gt;
+&lt;p style=&quot; line-height: 0px; margin-bottom: 10px; &quot;&gt;&lt;/p&gt;
+&lt;scomment&gt;# http://momentjs.com/&lt;/scomment&gt;
+&lt;p style=&quot; line-height: 10px; margin-bottom: 30px; &quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;var time_year_month = moment().format(&#39;YYYY-MM&#39;);&lt;/code&gt;  &lt;br /&gt;
+&lt;code&gt;(2015-03)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;var time = moment(&quot;2010-10-20 4:30&quot;, &quot;YYYY-MM-DD HH:mm&quot;).format(&quot;YYYY-MMMM&quot;); &lt;/code&gt;  &lt;br /&gt;
+&lt;code&gt;(2010-October)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;var time = moment.unix(1427869321).format(&quot;YYYY-MM-DD HH:mm&quot;); &lt;/code&gt;  &lt;br /&gt;
+&lt;code&gt;(2015-04-01 14:22)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 </content>
    </entry>
