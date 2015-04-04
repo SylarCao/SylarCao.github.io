@@ -34,6 +34,12 @@ description:  Hello World
   </pre>
   - 在 terminal 里 cd 到项目目录，输入 <code>jekyll serve --watch</code>
   - 浏览器访问 http://localhost:4000 即可
++ 可能遇到问题
+  - ![Alt text](/images/1/hello_world_error1.jpeg)
+  - 解决方案
+    + ruby 版本到2.1.1 即可
+    + <code>rvm use ruby-2.1.1</code>
+    + 参考 [https://github.com/jekyll/jekyll/issues/2125][link4]
 
 
 ## 参考
@@ -41,11 +47,16 @@ description:  Hello World
 <br>
 ><a href = "http://kimmykuang.github.io/local-jekyll.html">http://kimmykuang.github.io/local-jekyll.html</a>
 
-
-
 <!-- 注释 -->
 
  [Kimmy]:    http://kimmykuang.github.io/
  [link2]:    https://help.github.com/articles/set-up-git/
  [link1]:    http://beiyuu.com/github-pages/
  [link3]:    http://kimmykuang.github.io/local-jekyll.html
+ [link4]:    https://github.com/jekyll/jekyll/issues/2125
+ [link5]:    http://beiyuu.com/github-pages.html
+ [link6]:    http://kimmykuang.github.io/local-jekyll.html
+
+
+
+

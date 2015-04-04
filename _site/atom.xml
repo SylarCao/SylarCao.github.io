@@ -4,7 +4,7 @@
    <title></title>
    <link href="" rel="self" type="application/atom+xml"/>
    <link href="" rel="alternate" type="text/html" />
-   <updated>2015-04-01T16:41:18+08:00</updated>
+   <updated>2015-04-04T13:42:03+08:00</updated>
    <id></id>
    <author>
      <name></name>
@@ -247,6 +247,18 @@
     &lt;ul&gt;
       &lt;li&gt;在 terminal 里 cd 到项目目录，输入 &lt;code&gt;jekyll serve --watch&lt;/code&gt;&lt;/li&gt;
       &lt;li&gt;浏览器访问 http://localhost:4000 即可&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;可能遇到问题
+    &lt;ul&gt;
+      &lt;li&gt;&lt;img src=&quot;/images/1/hello_world_error1.jpeg&quot; alt=&quot;Alt text&quot; /&gt;&lt;/li&gt;
+      &lt;li&gt;解决方案
+        &lt;ul&gt;
+          &lt;li&gt;ruby 版本到2.1.1 即可&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;rvm use ruby-2.1.1&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;参考 &lt;a href=&quot;https://github.com/jekyll/jekyll/issues/2125&quot;&gt;https://github.com/jekyll/jekyll/issues/2125&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
