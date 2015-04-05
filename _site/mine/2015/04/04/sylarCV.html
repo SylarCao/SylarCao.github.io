@@ -1,6 +1,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Sylar</title>
+  <script src="/bower_components/moment/moment.js"></script>
 </head>
 <body style="
     margin-left: 10%;
@@ -11,9 +12,49 @@
 ">
 <div>
 
-<h1> 输入正确答案后可查看简历 </h1>
+<div>
+<br>
+<br>
+<h1> 曹继冶 </h1>
+<ul>
+  <li> 男  1989年</li>
+  <li> 上海交通大学  电子与计算机工程 本科</li>
+  <!-- <li> 联系方式 </li>
+  <ul>
+    <li> 手机：13818611853 </li>
+    <li> QQ: 1579917501 </li>
+    <li style=" color: red; "> 强烈建议加QQ聊天 不要打手机号码 你懂的 </li>
+  </ul> -->
+</ul>
 
-<h3> 提示: </h3>
+<h2> 基本信息 </h2>
+<ul>
+    <li> 精通编程语言 ios, c/c++ </li> 
+    <li> 不精通的编程语言 </li> 
+      <ul> 
+        <li> 简单的网页:  html/html5 + css/scss + angular.js </li>
+        <li> 简单的后台:  node.js + ruby(influxdb + mongodb + redis) </li>
+        <li> php: yii 框架</li>
+        <li> 简单切图 photoshop </li>
+        <li> 简单的视频 after affect </li>
+      </ul>
+      <br> 
+    <li> github博客地址: <a href="http://sylarcao.github.io/" style=" font-style: italic; " target="_blank" class="external"> http://sylarcao.github.io/ </a></li>
+  <li> 贡献开源代码 code4app应用（日历）</li>
+  <ul>
+    <li> 下载地址: <a href="http://code4app.com/ios/PWSCalendar/53229570933bf0443d8b4591" style=" font-style: italic; " target="_blank" class="external"> http://code4app.com/ios/PWSCalendar/53229570933bf0443d8b4591 </a></li>
+    <li> 查看次数：6000+ </li>
+    <li> 下载次数：3000+ </li>
+  </ul>
+</ul>
+</div>
+
+<div id="question"> 
+  <br>
+  <hr>
+<h1> 查看更多内容请输入密码 </h1>
+
+<h3> 密码提示: </h3>
 <h3>   >++++++++[<+++++++++++>-]<-.++++++++++++++.+++++++.---------.++++++++++++.--.--------. <h3>
 
 <input id = "input_value" type = "input" style = " height: 36px;
@@ -37,52 +78,17 @@
 <input type = "text" value = "abc" hidden = "true"/>
 
 
-<div id = "not_correct" hidden="true" style=" font-style: italic;
-                                      font-size: 24px;
-                                      color: lightgray; ">
+<div id = "not_correct" style=" font-style: italic;
+                                      font-size: 14px;
+                                      color: darkgray; ">
 
-<h5> 答案不正确 &nbsp&nbsp&nbsp&nbsp   亲 </h5>
-<h5> 如果你是hr 可以问问你的程序猿先森 </h5>
-<h5> 任何一个3年经验的程序猿(无论是写什么语言的)应该不超过5分钟就能搞定 </h5>
+<p> 如果你是hr 可以问问你的程序猿先森 </p>
+<p> 任何一个3年经验的程序猿(无论是写什么语言的)应该1-5分钟就能搞定 </p>
+</div>
 </div>
 
-<div id = "correct" hidden="true">
-
-<br>
-<br>
-<h1> 曹继冶 </h1>
-<ul>
-  <li> 男  1989年</li>
-  <li> 上海交通大学  电子与计算机工程 本科</li>
-  <li> 联系方式 </li>
-  <ul>
-    <li> 手机：13818611853 </li>
-    <li> QQ: 1579917501 </li>
-    <li style=" color: red; "> 强烈建议加QQ聊天 不要打手机号码 你懂的 </li>
-  </ul>
-</ul>
-
-<h2> 基本信息 </h2>
-<ul>
-    <li> 精通编程语言 ios, c/c+ </li> 
-    <li> 不精通的编程语言 </li> 
-      <ul> 
-        <li> 简单的网页:  html/html5 + css/scss + angular.js </li>
-        <li> 简单的后台:  node.js + ruby(influxdb + mongodb + redis) </li>
-        <li> php: yii 框架</li>
-        <li> 简单切图 photoshop </li>
-        <li> 简单的视频 after affect </li>
-      </ul>
-      <br> 
-    <li> github博客地址: <a href="http://sylarcao.github.io/" style=" font-style: italic; " target="_blank" class="external"> http://sylarcao.github.io/ </a></li>
-  <li> 贡献开源代码 code4app应用（日历）</li>
-  <ul>
-    <li> 下载地址: <a href="http://code4app.com/ios/PWSCalendar/53229570933bf0443d8b4591" style=" font-style: italic; " target="_blank" class="external"> http://code4app.com/ios/PWSCalendar/53229570933bf0443d8b4591 </a></li>
-    <li> 查看次数：6000+ </li>
-    <li> 下载次数：3000+ </li>
-  </ul>
-</ul>
-
+<!-- question div -->
+<div id="correct" hidden="true">
 <h2> app store 项目 </h2>
 <ul>
   <li> 12小时 </li>
@@ -192,6 +198,15 @@
     <li> 公司倒闭 </li>
   </ul>
 </ul>
+
+<h2> 联系方式 </h2>
+<ul>
+    <li> 手机：13818611853 </li>
+    <li> QQ: 1579917501 </li>
+    <li style=" color: red; "> 强烈建议加QQ聊天 不要打手机号码 你懂的 </li>
+</ul>
+
+
 </div>
 </body>
 
@@ -200,14 +215,30 @@
   function fun1(){
     var word = document.getElementById("input_value").value;
     if (word == 'Welcome') {
-      document.getElementById("not_correct").hidden = true;
+      document.getElementById("question").hidden = true;
       document.getElementById("correct").hidden = false;
+      var time0 = moment().format('X');
+      window.localStorage.showAll = time0;
     }else{
-      document.getElementById("not_correct").hidden = false;
-      document.getElementById("correct").hidden = true;
+      alert("不正确哟      亲")
     }
   };
 </script>
+
+
+
+
+<script>
+var time0 = moment().format('X');
+var storage_time0 = window.localStorage.showAll;
+var delta = time0 - storage_time0;
+if (delta <= 3600){
+  document.getElementById("question").hidden = true;
+  document.getElementById("correct").hidden = false;
+}
+</script>
+
+
 
 
 <!-- <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js" type="text/javascript"></script> -->
