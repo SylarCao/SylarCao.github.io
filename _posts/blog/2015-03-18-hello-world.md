@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        Hello World
+title:        Hello World - 如何用 Github 建立个人博客
 category:     blog
 description:  Hello World
 ---
