@@ -20,6 +20,8 @@ description:  Hello World
   - 新建一个 Repository 名字叫 yourname.github.io
   - 提交一个 index.html 文件，然后 push 到 GitHub 的 master 分支
   - 访问 yourname.github.io 就可以看到你上传的页面了
+  + for example: <br/>
+    curl -X POST http://localhost:3000/smartcooler/pi -H "Content-Type:application/json" --data '{"type":"temperature", "data":{"temp_f":"1245"}}'
 <!-- + 本人是写ios出生，第一次建立网页，具体参考[这篇文章][link1] -->
 
 

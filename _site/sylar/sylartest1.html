@@ -1,0 +1,77 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Sylar</title>
+  <script src="/bower_components/moment/moment.js"></script>
+</head>
+
+<body style="
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(226, 240, 17, 0.13);
+">
+
+<h1> abc </h1>
+
+
+<h1> 查看更多内容请输入密码 </h1>
+
+<h3> 密码提示: </h3>
+<h3>   >++++++++[<+++++++++++>-]<-.++++++++++++++.+++++++.---------.++++++++++++.--.--------. <h3>
+
+<input id = "input_value" type = "input" style = " height: 36px;
+                                font-size: 20px;
+                                border-radius: 5px;
+                                "   value=""/>
+
+<input style="background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    outline-width: 0px; "
+     type = "submit" onclick = "fun1()" value = "submit"/>
+
+<input type = "text" value = "abc" hidden = "true"/>
+
+
+<div id = "not_correct" style=" font-style: italic;
+                                      font-size: 14px;
+                                      color: darkgray; ">
+
+</div>
+
+
+<div id="correct" hidden="true">
+  <h1> correct </h1>
+</div>
+
+
+
+</body>
+
+<script>
+
+  function fun1(){
+    var word = document.getElementById("input_value").value;
+    if (word == 'Welcome') {
+      // document.getElementById("question").hidden = true;
+      document.getElementById("correct").hidden = false;
+      var time0 = moment().format('X');
+      window.localStorage.showAll = time0;
+    }else{
+      alert("不正确哟      亲")
+    }
+  };
+</script>
+
+
+
+
+
