@@ -4,13 +4,28 @@
    <title></title>
    <link href="" rel="self" type="application/atom+xml"/>
    <link href="" rel="alternate" type="text/html" />
-   <updated>2015-04-09T16:49:01+08:00</updated>
+   <updated>2015-04-10T13:22:59+08:00</updated>
    <id></id>
    <author>
      <name></name>
      <email></email>
    </author>
 
+   
+   <entry>
+     <title>几乎整个互联网行业都缺 CTO【转】</title>
+     <link href="http://beiyuu.com/blog/2015/04/10/%E5%87%A0%E4%B9%8E%E6%95%B4%E4%B8%AA%E4%BA%92%E8%81%94%E7%BD%91%E8%A1%8C%E4%B8%9A%E9%83%BD%E7%BC%BA%20CTO.html"/>
+     <updated>2015-04-10T00:00:00+08:00</updated>
+     <id>http://beiyuu.com/blog/2015/04/10/几乎整个互联网行业都缺 CTO</id>
+     <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://www.niaogebiji.com/article-6557-1.html&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;转自：http://www.niaogebiji.com/article-6557-1.html&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;tbody&gt;&lt;tr&gt;&lt;td id=&quot;article_content&quot;&gt;&lt;div&gt;&lt;span style=&quot;line-height: 1.8em;&quot;&gt;几乎整个互联网行业都缺 CTO，特别是一些草根背景的创业者，这个问题更加显著。从我自己的感受，身边各种朋友委托我找 CTO 的需求，嗯，算下来超过两位数了，光最近一个月就有 3 个，而且这三家都是刚拿了 A 轮的。其他那些公司 CTO 大部分空缺了一两年，或者其他高管临时暂代过渡。实话说，我觉得每个公司都不错的，但通常也只能遗憾的说，真没有能推荐的。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;其实，根据个人的观察，每个互联网团队都喊需要 CTO，但是具体诉求却各不相同，如果说共性，就只有一点，那就是，公司老板对技术的期望值与目前技术团队的能力表现，有较大的差异，而这个差异，对于老板来说，就是一个想法，找个合格的 CTO，一切就都解决了。其实，真不是这回事。&lt;/div&gt;&lt;div&gt;&lt;b&gt;今天要说的第一点，就是期望值的控制&lt;/b&gt;&lt;/div&gt;&lt;div&gt;很多互联网公司都希望自己走技术驱动的路线，期望小而美，复制美国技术新贵的市场表现；这不能说是一个错误的期望，但是，现实能有多少符合这种需求的人才呢？这样的人才需要技术有前瞻性，对产业格局有判断，对管理有心得，情商还不能低（算了一下，四项里我至少三项不符合。）。整个行业内这样的人有几个？凭什么会跟你？事实上我身边确实有这样的案例，一个以业务为主的公司，搞定了一个超棒的 CTO，很快就转型成以技术为驱动的公司，公司价值极大提升，问题是，这种现象很难具有复制性。&lt;/div&gt;&lt;div&gt;&lt;b&gt;下面我说一下一个最基本的让人纠结的问题，到底什么是 CTO？&lt;/b&gt;&lt;/div&gt;&lt;div&gt;其实，空谈这个名词的定义毫无意义，从我身边很多朋友公司的实例来看，他们对这个角色的定义和定位是差异非常大的。具体而言，不同创业团队，对 CTO 需求的真实想法，包括如下层面。&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font size=&quot;4&quot;&gt;技术选型&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;这其实是创业公司最纠结的问题；他们往往一上来基于已有的程序员的个人习惯和爱好，选择了一个技术方案，然后到某一天一看，我靠，全是坑（当然，也可能与执行者的能力有关）。而更糟的是，这个技术方案相对冷门，市场上去招聘都很难做。还有就是技术方案成本过高，（不只是钱的问题，特别是时间成本！）结果严重影响到后续的发展速度。　我举个简单例子，最近我给多个创业者提建议，比如做 app，很多以内容运营为核心的 app，不要用原生态开发，目前一堆第三方的跨平台开发架构，如果选择合适，可以极大减少开发成本，以及降低技术招聘的难度。微信开店开社区，也有一堆第三方平台，这些事情，对于一些创业者来说，就是特纠结的事情，第一，他们并不完全了解这个领域；第二，他们就算有所了解，也很难判断究竟谁家的方案更靠谱？难道要靠百度竞价排名来裁决么？　而对于技术人员，包括相当多技术高手，他们也会有一些自己的打算，比如说，我就熟悉这个，为啥要用2我不熟悉的？（没有考虑从公司长远的人力成本和开发效率）。比如说，我本来服务端技术很强，现在用了一个开源服务端框架，比如 skynet，我变成写脚本的了，我价值怎么体现？（不知道自己的价值来自于产品的市场表现）。&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;4&quot;&gt;&lt;b&gt;万能适配器&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;公司有了一个基本的起步，比如在某个平台上有了一点成绩，然后希望扩展到不同领域，不同平台，然后老板突然发现，哦，原来程序员不是什么都会的。服务端，前端，运维，安全，数据库，甚至 SEO 优化（你敢说这不是技术？）最好有个牛人都能带起来，这个牛人，就是他们定义的 CTO，咳咳。创业公司，人少而事杂，其实，真的可以理解。我认识不少创业者，最终万般无奈下，硬是把自己逼成了万能哥。话说当年我也是创业的时候，万般无奈才自学怎么做运维的，虽然很多都没学会，但是偶尔也能出去忽悠一下。&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;4&quot;&gt;&lt;b&gt;性能调优及架构扩展&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;很多小公司到了一定的用户规模和并发规模的时候，一下子就扛不住了，甚至严重影响业务的拓展，某著名淘品牌自己做了一个独立网店，结果一搞秒杀活动就崩溃，（吐个槽，他们运营人员也死心眼，就知道搞秒杀，知道技术架构不行，不会搞点别的形式么）。结果独立网店一直就没搞起来。其实很多这些偏传统的互联网公司，他们所遇到的问题，在高手眼里不值一提，但是这个坎过不去，他们真就发展不起来。说个题外话八卦一下，当年腾讯叫OICQ的时候，一堆 *icq，只有腾讯牛了，其他的为啥不行？真的是产品原因么？其实都是这个问题，到了１００万用户的时候，就只有腾讯还能发展新用户，其他的技术全都撑不住了。大家看到的都是剩者为王，我看到的是，数不清非常不错的产品，死在这个环节上了。严格的说，这其实不是 CTO 的工作，按照分工来说，通常涉及系统分析师，系统架构师，以及 DBA 来做这方面的工作，但是对于创业公司，根本就没这种角色设定，他们遇到这个问题，通常想到的是，有个好的 CTO 就好了。&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;4&quot;&gt;&lt;b&gt;团队管理和效率提升，这还真是 CTO 的本职工作了&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;我遇到技术出身的创业者，他纠结的问题是，当时自己一个人做开发，连带着做运营，七七八八一堆事，也把东西做起来了，现在公司产品知名度有了，拿到投资了，开发团队也搭起来了，怎么开发效率反而下去了？所以，他的理解是，需要一个 CTO。　从技术人才招聘，团队培养，技术培训，到开发模式培训（比如现在流行的敏捷开发），产品质量测评体系，信息安全防护等等，这些林林总总的事情，对于创业者来说，就全部归纳为“需要一个 CTO”，嗯。&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;4&quot;&gt;&lt;b&gt;数据决策体系&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;自从“大数据”概念火了以后，基本上所有创业者都在谈，我的业务模式，发展了海量用户后，一定是基于数据驱动，可是数据咋驱动？没几个人真想清楚了，但是没关系，只要有 CTO，这个问题就解决了。　我知道真有能搞定此事的 CTO，真的有，不过，真的属于稀缺品种，目测比大熊猫还少。因为，要理解数据驱动，首先要理解业务，而理解业务，往往不是技术人员的特长。又要自吹一句，我在百度的时候，最牛逼的事情就是在产品部门里搭出一个技术团队，来做数据，为什么要坚持在产品部门编制？（实话说，当年技术部门的薪酬更高一些），我坚持认为重心在于数据目标和解读，而不是技术实现。　所以，这里我多说一句，数据决策体系，先想清楚具体目标和具体展现，再寻求技术支持，而不是一句话推给技术团队去弄，除非你公司里真有这么一只极品稀缺大熊猫。　实际上，再吐个槽，最基本的数据处理的结果，经过正确严谨的解读，就已经有极大的价值了，而很多人往往无视这些，去追求更高深的技术实现，搞一些莫名其妙的算法和逻辑，来彰显技术价值，其实是舍近求远的表现。　&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;4&quot;&gt;&lt;b&gt;重构商业模式&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;这个，咳咳，怎么说呢，公司觉得自己商业模式不够酷，不够吸引资本关注，希望从业务驱动转为技术驱动，嗯，来个牛逼的 CTO，这事真可行，嗯，话说，这事真可行，点到为止，不展开了。　&lt;/div&gt;&lt;div&gt;以上是我观测到的，身边以及业内一些典型的 CTO 需求，当然，不同公司诉求真的不一样。有的侧重管理，有的侧重解决瓶颈问题，但是对老板而言，只要他们认为目前技术团队不够好，不够给力，不够预期，那么，这就是他们认为缺乏的，CTO。不仅仅是创业公司，上市公司乃至巨头，这个问题也一样存在，比如说，百度的 CTO，貌似空缺了好几年呢。是他们的人才不够优秀么？还不是达不到李厂长期望值。&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;下面说我的一些观点&lt;/div&gt;&lt;div&gt;&lt;b&gt;第一、&lt;/b&gt;&lt;span style=&quot;line-height: 1.8em;&quot;&gt;相当比例大公司背景的技术牛人，并不适合去创业公司做 CTO，原因&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;1：技术再牛，不够全面，这没辙，大公司求深，创业公司求全&lt;/div&gt;&lt;div&gt;2：技术再牛，要懂业务。&lt;/div&gt;&lt;div&gt;创业公司没有完备严谨的产品经理，没有明确的目标规划，很多工作是一个初步的目标，然后做起来看。如果技术人员不懂业务，很可能就会走弯路，做出很多不伦不类的东西，所以创业公司遇到这样的大牛，要先沟通到位再决定，不要迷信简历，当然，不乏这里有非常出色的。&lt;/div&gt;&lt;div&gt;&lt;b&gt;第二、&lt;/b&gt;&lt;span style=&quot;line-height: 1.8em;&quot;&gt;创始公司老板要想清楚自己当前真正需要的是什么，控制一下目标和欲望，有些事不能强求的&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;第三、&lt;/b&gt;&lt;span style=&quot;line-height: 1.8em;&quot;&gt;要给人才成长的空间，CTO 也不是天生的，不要认为外面的和尚一定好念经。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;第四、&lt;/b&gt;&lt;span style=&quot;line-height: 1.8em;&quot;&gt;遇到真的特别合适的人才，要舍得本钱，理想可以谈，但是让人家舍弃各种丰厚回报的机会来跟你打拼，总要出示一些诚意。要知道这样的人才是稀缺品。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;line-height: 1.8em;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;最后解释一下 CTO 所需要的四个领域的能力&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;技术前瞻性&lt;/b&gt;&lt;/div&gt;&lt;div&gt;就好比 2010 年谷歌手机发布了，您还在那里吭哧吭哧跟老板说咱们好好弄塞班。（好多技术牛人，大公司的技术总监都是这样的！！！）。&lt;/div&gt;&lt;div&gt;&lt;b&gt;对产业格局有判断&lt;/b&gt;&lt;/div&gt;&lt;div&gt;举例来说，移动互联网起来了，能知道工具型，娱乐性，生活性的应用大概的爆发周期和爆发规模。 能对移动游戏，电商的发展速度和市场顶点在哪里，这样才能给老板正确的技术投入建议和规划目标建议，别市场喷发的时候不去考虑准备架构扩容，还在角落里扣扣索索的算怎么比同行省点运维成本。&lt;/div&gt;&lt;div&gt;&lt;b&gt;管理心得&lt;/b&gt;&lt;/div&gt;&lt;div&gt;技术团队的培养和带动，别光顾着自己牛逼，要让团队牛逼。&lt;/div&gt;&lt;div&gt;&lt;b&gt;情商&lt;/b&gt;&lt;/div&gt;&lt;div&gt;各种沟通，协调，不解释。&lt;/div&gt;&lt;div&gt;就这样，有点凌乱，凑活看吧。&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+
+</content>
+   </entry>
    
    <entry>
      <title>apple watch 预言</title>
@@ -776,55 +791,6 @@ curl -X POST http://localhost:3000/smartcooler/pi -H “Content-Type:application
 &lt;div style=&quot;text-align:center&quot;&gt;
 &lt;embed src=&quot;http://player.youku.com/player.php/sid/XNTUxNDY1NDY4/v.swf&quot; allowfullscreen=&quot;true&quot; quality=&quot;high&quot; width=&quot;480&quot; height=&quot;400&quot; align=&quot;middle&quot; allowscriptaccess=&quot;always&quot; type=&quot;application/x-shockwave-flash&quot; /&gt;
 &lt;/div&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>Tabby</title>
-     <link href="http://beiyuu.com/project/2013/04/12/tabby.html"/>
-     <updated>2013-04-12T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/project/2013/04/12/tabby</id>
-     <content type="html">&lt;p&gt;用&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot;&gt;Tabby&lt;/a&gt;有一阵子了，最近把细节完善，发布在了Chrome Store。&lt;/p&gt;
-
-&lt;p&gt;他的功能是，当你打开几十上百个Chrome标签，很占资源，不想加入书签，也不想存入Instapaper等Read It Later的东西，只看一次，但就是不想现在看，这时候只要在页面点击右键，选择“暂存到Tabby”即可。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-pro1.png&quot; alt=&quot;Tabby&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;你可以设置使用快捷键（默认关闭），要打开暂存的标签，只需点击Tabby的图标。因为使用了Chrome的书签，即使你卸载插件，还没来得及看的也不会丢失，也会默认同步到别的设备。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-pro2.png&quot; alt=&quot;Tabby&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;推荐一本书&lt;a href=&quot;http://read.douban.com/ebook/709141/?referral_code=e6acsgl3&quot; title=&quot;我是个年轻人，我心情不太好&quot;&gt;我是个年轻人，我心情不太好&lt;/a&gt;，当时是他的简介让我动心了一下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;我25岁，读过一个硕士，但是退学了。我被时间、空间、意义这些事情烦扰着。我知道的东西多得难以置信。我知道名字，年份。数以百计。我知道谁第一个上的珠穆朗玛峰。我知道谁导演了那些美国最蹩脚的肥皂剧。我知道亚里士多德讲的话是啥意思。我知道时间在太阳上会走得慢一点……&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;但是，我知道这些有什么意义呢？&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;我的生活仍旧是一团糟。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;不，连一团糟都不是，它是一片空白。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;我没有女朋友，甚至没有很好很好的朋友。我有一个哥哥，还有一个比我小很多、还在上幼儿园的“伙伴”。可他们也不算是朋友。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;要是我能有一种非常靠谱的感觉，觉得一切都会好起来，那该多好。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;不指望这本书能喂你多大一碗鸡汤，就是让你知道这个年纪的共同态，而且或许有解决办法。&lt;/p&gt;
-
-&lt;p&gt;好吧，去下载插件吧：
-&lt;a href=&quot;https://chrome.google.com/webstore/detail/tabby/pifnjkdglcfkfpdjdolfacpfdlgpdkhp&quot; title=&quot;Tabby&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/other/Tabby-440.png&quot; alt=&quot;Tabby&quot; width=&quot;300&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
 </content>
    </entry>
    
