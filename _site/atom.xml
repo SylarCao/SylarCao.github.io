@@ -4,13 +4,66 @@
    <title></title>
    <link href="" rel="self" type="application/atom+xml"/>
    <link href="" rel="alternate" type="text/html" />
-   <updated>2015-04-22T11:18:23+08:00</updated>
+   <updated>2015-04-22T11:34:57+08:00</updated>
    <id></id>
    <author>
      <name></name>
      <email></email>
    </author>
 
+   
+   <entry>
+     <title>Auto Layout 使用心得 【转】</title>
+     <link href="http://beiyuu.com/blog/2015/04/22/autolayout1.html"/>
+     <updated>2015-04-22T00:00:00+08:00</updated>
+     <id>http://beiyuu.com/blog/2015/04/22/autolayout1</id>
+     <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://www.cocoachina.com/ios/20150422/11632.html&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;转自：http://www.cocoachina.com/ios/20150422/11632.html&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;article class=&quot;markdown-body entry-content&quot; itemprop=&quot;mainContentOfPage&quot;&gt;&lt;h2&gt;
+&lt;a id=&quot;user-content-auto-layout-使用心得系列文章代码仓库&quot; class=&quot;anchor&quot; href=&quot;#auto-layout-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0%E4%BB%A3%E7%A0%81%E4%BB%93%E5%BA%93&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;《Auto Layout 使用心得》系列文章代码仓库&lt;/h2&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+
+
+&lt;h4&gt;
+&lt;a id=&quot;user-content-1-auto-layout-使用心得一-初体验&quot; class=&quot;anchor&quot; href=&quot;#1-auto-layout-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E4%B8%80-%E5%88%9D%E4%BD%93%E9%AA%8C&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;1. &lt;a href=&quot;http://lvwenhan.com/ios/430.html&quot;&gt;Auto Layout 使用心得（一）—— 初体验&lt;/a&gt;
+&lt;/h4&gt;
+
+&lt;h4&gt;
+&lt;a id=&quot;user-content-2-auto-layout-使用心得二-实现三等分&quot; class=&quot;anchor&quot; href=&quot;#2-auto-layout-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E4%BA%8C-%E5%AE%9E%E7%8E%B0%E4%B8%89%E7%AD%89%E5%88%86&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;2. &lt;a href=&quot;http://lvwenhan.com/ios/431.html&quot;&gt;Auto Layout 使用心得（二）—— 实现三等分&lt;/a&gt;
+&lt;/h4&gt;
+
+&lt;p&gt;搭建过程：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://camo.githubusercontent.com/436ae426ad98dd6ef07f1821a02b6a95e50893a1/687474703a2f2f6c7677656e68616e2e636f6d2f636f6e74656e742f75706c6f616466696c652f3230313530332f62356539313432353634373830302e676966&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/436ae426ad98dd6ef07f1821a02b6a95e50893a1/687474703a2f2f6c7677656e68616e2e636f6d2f636f6e74656e742f75706c6f616466696c652f3230313530332f62356539313432353634373830302e676966&quot; alt=&quot;pic&quot; data-canonical-src=&quot;http://lvwenhan.com/content/uploadfile/201503/b5e91425647800.gif&quot; style=&quot;max-width:100%;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id=&quot;user-content-3-auto-layout-使用心得三-自定义-cell-并使用-auto-layout&quot; class=&quot;anchor&quot; href=&quot;#3-auto-layout-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E4%B8%89-%E8%87%AA%E5%AE%9A%E4%B9%89-cell-%E5%B9%B6%E4%BD%BF%E7%94%A8-auto-layout&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;3. &lt;a href=&quot;http://lvwenhan.com/ios/441.html&quot;&gt;Auto Layout 使用心得（三）—— 自定义 cell 并使用 Auto Layout&lt;/a&gt;
+&lt;/h4&gt;
+
+&lt;h4&gt;
+&lt;a id=&quot;user-content-4-auto-layout-使用心得四-22-行代码实现拖动回弹&quot; class=&quot;anchor&quot; href=&quot;#4-auto-layout-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E5%9B%9B-22-%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E6%8B%96%E5%8A%A8%E5%9B%9E%E5%BC%B9&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;4. &lt;a href=&quot;http://lvwenhan.com/ios/442.html&quot;&gt;Auto Layout 使用心得（四）—— 22 行代码实现拖动回弹&lt;/a&gt;
+&lt;/h4&gt;
+
+&lt;p&gt;效果：&lt;br /&gt;
+&lt;a href=&quot;https://camo.githubusercontent.com/d6ea9c60c94facd653176f84f6de4c942581757d/687474703a2f2f6c7677656e68616e2e636f6d2f636f6e74656e742f75706c6f616466696c652f3230313530342f62356539313432373838333537302e676966&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/d6ea9c60c94facd653176f84f6de4c942581757d/687474703a2f2f6c7677656e68616e2e636f6d2f636f6e74656e742f75706c6f616466696c652f3230313530342f62356539313432373838333537302e676966&quot; alt=&quot;pic&quot; data-canonical-src=&quot;http://lvwenhan.com/content/uploadfile/201504/b5e91427883570.gif&quot; style=&quot;max-width:100%;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;
+&lt;a id=&quot;user-content-5-auto-layout-使用心得五-根据文字图片自动计算-uitableviewcell-高度&quot; class=&quot;anchor&quot; href=&quot;#5-auto-layout-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E4%BA%94-%E6%A0%B9%E6%8D%AE%E6%96%87%E5%AD%97%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E8%AE%A1%E7%AE%97-uitableviewcell-%E9%AB%98%E5%BA%A6&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;5. &lt;a href=&quot;http://lvwenhan.com/ios/449.html&quot;&gt;Auto Layout 使用心得（五）—— 根据文字、图片自动计算 UITableViewCell 高度&lt;/a&gt;
+&lt;/h4&gt;
+
+&lt;p&gt;效果：&lt;br /&gt;
+&lt;a href=&quot;https://camo.githubusercontent.com/1bf1439bd0ae913ee04b0e4285cc1a30fda2cb21/687474703a2f2f7374617469636f6e7361652e73696e616170702e636f6d2f696d616765732f352e676966&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://camo.githubusercontent.com/1bf1439bd0ae913ee04b0e4285cc1a30fda2cb21/687474703a2f2f7374617469636f6e7361652e73696e616170702e636f6d2f696d616765732f352e676966&quot; alt=&quot;pic&quot; data-canonical-src=&quot;http://staticonsae.sinaapp.com/images/5.gif&quot; style=&quot;max-width:100%;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;/article&gt;
+
+</content>
+   </entry>
    
    <entry>
      <title>12小时——我的第二个创业项目</title>
@@ -747,78 +800,6 @@ curl -X POST http://localhost:3000/smartcooler/pi -H “Content-Type:application
 
 &lt;!-- 注释 --&gt;
 
-</content>
-   </entry>
-   
-   <entry>
-     <title>豆瓣FM(iOS 3.0)使用体会</title>
-     <link href="http://beiyuu.com/opinion/2013/06/06/douban-fm.html"/>
-     <updated>2013-06-06T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/opinion/2013/06/06/douban-fm</id>
-     <content type="html">&lt;p&gt;豆瓣FM发布了全新设计的3.0版本，很多Feature不错：&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;全新设计，清新、大气&lt;/li&gt;
-    &lt;li&gt;操作流畅爽滑，运行交互效率很高&lt;/li&gt;
-    &lt;li&gt;终于有歌词啦&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;使用中总结了一些体会，非常感性、毫无逻辑可言，看看就好：&lt;/p&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;产品定位&lt;/h2&gt;
-
-&lt;p&gt;豆瓣FM的产品定位，摘抄如下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;它简单、易用，熟悉每个用户的脾气秉性，又能够聚合集体的智慧。无论是在家里、工作场所、咖啡厅还是交通工具上，无论是在休息、等候、娱乐还是工作时，它都能够提供完美、一致的体验。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;大家对推荐都满意，算法就不说了。简单易用来讲，国内的音乐APP中(虾米、QQ、百度等)，只有豆瓣是打开就播放，确实简单易用。&lt;/p&gt;
-
-&lt;p&gt;这样的打开播放的产品定位下，使用场景就有些变化了。&lt;/p&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;交互框架&lt;/h2&gt;
-
-&lt;h3 id=&quot;section-2&quot;&gt;引导页&lt;/h3&gt;
-
-&lt;p&gt;从App引导开始，新版FM就想让用户熟悉上下拉动的操作。&lt;/p&gt;
-
-&lt;p&gt;豆瓣这次竟然使用了被吐槽无数次的App引导，还蛮让人意外的。是对交互设计不自信吗？观察周围使用的人以及我自己，基本上没人会去看引导页的内容，况且下拉的操作违反直觉，更容易招惹反感，播放页面也被蒙层，我直观感受是恐惧。&lt;/p&gt;
-
-&lt;p&gt;登录和进入按钮被放置在引导页下方，并且位置尴尬，大约是为了让用户感受到下面还有内容，平衡了讨厌引导的用户需求(估计设计师自己也讨厌引导吧)，却牺牲了美感。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8b8af2c8jw1e5eqcvmp9gj20oq0lp408.jpg&quot; alt=&quot;splash&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;section-3&quot;&gt;上下拉&lt;/h3&gt;
-
-&lt;p&gt;自从抽屉式导航普及开来之后，横滑展开设置成为一种默认操作。&lt;/p&gt;
-
-&lt;p&gt;上下拉在虾米音乐中也有被应用，但和豆瓣的不同在于：虾米入口界面不是播放页，而是搜索、我的虾米、本地音乐这样的交互界面，此时播放页从下拉上来，更像是另一个维度的事情，并且主界面的交互有很多，播放页到另一个维度是很好理解的事情。硬套生活中所讲的横向、纵向的概念也完全讲的通。&lt;/p&gt;
-
-&lt;p&gt;豆瓣FM的逻辑不完美在于，他的主页是播放页，选择兆赫更像是个设置，硬说他是另一个维度也没错，但是这两个的关系太平等（都只有一个），上下拉就显得违反直觉了。&lt;/p&gt;
-
-&lt;p&gt;而且没人看引导，反直觉的上下拉动的交互，让很多人不知所措，顶部也没有标记表明那是可以拉动的。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8b8af2c8jw1e5eqd2xcj9j20oq0lpjv1.jpg&quot; alt=&quot;slide&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;section-4&quot;&gt;设计细节&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;封面不清晰&lt;/li&gt;
-&lt;li&gt;对话框关闭按钮在左边，为什么呢？&lt;/li&gt;
-&lt;li&gt;兆赫不能搜索，连换一批也不能？更新说明说动态切换，怎么切换？&lt;/li&gt;
-&lt;li&gt;暂停、播放按钮太小（上面显示广告也罢了，下面那么大的空间，完全可以利用起来）&lt;/li&gt;
-&lt;li&gt;只支持上下拉的手势，却不支持左右后退的手势？（更新说明里我瞟见了手势两个字）&lt;/li&gt;
-&lt;li&gt;顶部“正在同步”等状态栏，完全遮挡操作按钮，为什么不加后退手势这种标配呢？&lt;/li&gt;
-&lt;li&gt;在上下拉的交互框架中，歌曲状态栏细节做的很到位（比如当上下拉到歌曲名称位置的时候，状态栏才会fix住），但是上拉拖动的时候，状态栏此时是拖动的把手，却自己不动弹，逻辑又奇怪了不是？&lt;/li&gt;
-&lt;li&gt;其他的程序BUG，比如红心数目不对等等。&lt;/li&gt;
-&lt;li&gt;如何收藏兆赫，研究许久才知道是长按。&lt;/li&gt;
-&lt;li&gt;也是琢磨了半天才知道，点头像是进入设置。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8b8af2c8jw1e5eqd8tkg5j20oq0lpjti.jpg&quot; alt=&quot;slide&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;再重复一下，APP引导太可怕了！ 我说的全是废话，因为这个版本发布后，看起来好评如潮，哎。&lt;/p&gt;
 </content>
    </entry>
    
