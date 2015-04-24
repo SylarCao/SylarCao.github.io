@@ -1,0 +1,141 @@
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>留言板</title>
+  <script src="https://leancloud.cn/scripts/lib/av-0.5.1.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/bower_components/pnotify/pnotify.custom.min.js"></script>
+  <link href="/bower_components/pnotify/pnotify.custom.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(226, 240, 17, 0.13);
+">
+
+<div>
+  <h1> 写下任何你想说的话 </h1>
+</div>
+
+<div>
+  <textarea id = "content" style = "height: 200px;
+                                    width: 100%;
+                                    font-size: 20px;
+                                    border-radius: 5px;
+                                    " > </textarea>
+
+</div>
+<br/>
+联系方式:
+<div>
+  <input id = "contact" type="input" style = "height: 50px;
+                                              width: 80%;
+                                              font-size: 20px;
+                                              border-radius: 5px;
+                                              "/>
+</div>
+
+<!-- submit -->
+<br/>
+<input style="background-color: #ccc;
+              border-radius:6px;
+              color: #fff;
+              margin-left: px;
+              font-size: 22px;
+              text-decoration: none;
+              cursor: pointer;
+              border:none;
+              padding: 10px;
+              outline-width: 0px; "
+               type = "submit" onclick = "funSubmit()" value = "提交"/>
+
+
+</body>
+
+
+
+
+<script>
+
+  AV.initialize("fcbiiav00avvgzxm8wr34i741bwrhf51d2a7eljgc63xnb69", "v9agclgb58ay2r9le4oim7ti5k3x4rlol2m8iw6lu4i826r3");
+
+  function funSubmit(){
+    var content = document.getElementById("content").value;
+    var contact = document.getElementById("contact").value;
+
+    if (content.length < 5){
+      showNotify("请输入想说的话");
+      return;
+    }
+
+    if (contact.length < 3){
+      contact = "no contact";
+    }
+
+    AV.Cloud.run("addComment", {content: content, contact: contact}, {
+      success: function(data){
+        showNotify("发送成功");
+      },
+      error: function(err){
+        showNotify("发送失败");
+      }
+    });
+
+    var eee;
+  };
+
+
+  function showNotify(message){
+    new PNotify({
+        title: message,
+        icon: 'alert-warning',
+        animation:  function(status, callback, elem) {
+        var source_note = 'Always call the callback when the animation completes.';
+        var cur_angle = 0,
+            cur_opacity_scale = 0;
+        if (status == 'out') cur_opacity_scale = 1;
+        var timer = setInterval(function() {
+            cur_angle += 10;
+            if (cur_angle == 360) {
+                cur_angle = 0;
+                cur_opacity_scale = 1;
+                if (status == 'out') cur_opacity_scale = 0;
+                clearInterval(timer);
+            } else {
+                cur_opacity_scale = cur_angle / 360;
+                if (status == 'out') cur_opacity_scale = 1 - cur_opacity_scale;
+            }
+            elem.css({
+                '-moz-transform': ('rotate(' + cur_angle + 'deg) scale(' + cur_opacity_scale + ')'),
+                '-webkit-transform': ('rotate(' + cur_angle + 'deg) scale(' + cur_opacity_scale + ')'),
+                '-o-transform': ('rotate(' + cur_angle + 'deg) scale(' + cur_opacity_scale + ')'),
+                '-ms-transform': ('rotate(' + cur_angle + 'deg) scale(' + cur_opacity_scale + ')'),
+                'filter': ('progid:DXImageTransform.Microsoft.BasicImage(rotation=' + (cur_angle / 360 * 4) + ')')
+            }).fadeTo(0, cur_opacity_scale);
+            if (cur_angle == 0) {
+                if (status == 'out') elem.hide();
+                callback();
+            }
+        }, 20);
+    }
+});
+  };
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
