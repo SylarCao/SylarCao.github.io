@@ -1,0 +1,147 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>留言板</title>
+  <script src="https://leancloud.cn/scripts/lib/av-0.5.1.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/bower_components/pnotify/pnotify.custom.min.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/moment/moment.js"></script>
+  <link href="/bower_components/pnotify/pnotify.custom.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(226, 240, 17, 0.13);
+" ng-app="feedbackApp">
+
+
+
+
+<div ng-controller="controller1">
+  <input type="submit" value="Refresh" class="btn_refresh" ng-click="clickRefresh()" /> <br>
+
+  <!-- data -->
+  <div>
+    <br>
+    total count = {{responseFeedback.length}}
+    <br>
+    <ul ng-repeat="each_response in responseFeedback | orderBy:'-time0'">
+      <li>
+        <div>
+          <!-- content -->
+          <p class="cell_content">{{each_response.content}} </p>
+
+          <!-- time + contact info -->
+          <p>
+            <span class="cell_contact"> {{each_response.contact}} </span>
+            &nbsp;&nbsp;&nbsp;
+            <span class="cell_time0"> {{getTimeDescription(each_response.time0)}} </span>
+          </p>
+          <br>
+        </div>
+
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+</body>
+
+
+<script>
+
+  var feedbackApp = angular.module("feedbackApp", []);
+
+  feedbackApp.controller("controller1", function($scope) {
+
+    AV.initialize("fcbiiav00avvgzxm8wr34i741bwrhf51d2a7eljgc63xnb69", "v9agclgb58ay2r9le4oim7ti5k3x4rlol2m8iw6lu4i826r3");
+
+
+
+    $scope.value1 = "value11111";
+    var test_data = [{"contact":"llll","time0":1429864718,"content":"Comment is a piece of code which is ignored by any web browser. It is a good practice to add comments into your HTML code, especially in complex documents, to indicate sections of a document, and any other notes to anyone looking at the code. Comments help you and others understand your code and increases code readability.","objectId":"553a010ee4b069c225adefa9","createdAt":"2015-04-24T08:38:38.137Z","updatedAt":"2015-04-24T08:38:38.137Z"}];
+    $scope.responseFeedback = [];
+    $scope.responseFeedback = test_data;
+
+    var refreshing = false;
+
+    $scope.clickRefresh = function(){
+      if (refreshing == false) {
+        AV.Cloud.run("getComment", {}, {
+          success: function(data){
+            $scope.showNotify("成功");
+            refreshing = false;
+            $scope.responseFeedback = data;
+            $scope.$apply();
+          },
+          error: function(err){
+            $scope.showNotify("失败");
+            refreshing = false;
+          }
+        });
+        refreshing = true;
+        $scope.showNotify("刷新中...");
+      }
+    };
+
+    $scope.getTimeDescription = function(time0){
+      var rt = moment.unix(time0).format("YYYY-MM-DD HH:mm:ss dddd");
+      return rt;
+    };
+
+    $scope.showNotify = function(message){
+      new PNotify({
+        title: message,
+        animation: {
+            effect_in: 'show',
+            effect_out: 'slide'
+        }
+      });
+    };
+
+  });
+
+</script>
+
+<style>
+.btn_refresh{
+  border: none;
+  width: 200px;
+  height: 120px;
+  color: white;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.btn_refresh:focus{
+  outline: none;
+}
+
+.cell_title{
+
+}
+
+.cell_content{
+
+}
+
+.cell_contact{
+  color: rgb(165, 164, 164);
+
+}
+
+.cell_time0{
+  color: rgb(34, 35, 169);
+
+}
+
+</style>
+
+
+
+
+

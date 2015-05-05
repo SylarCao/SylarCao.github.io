@@ -61,7 +61,7 @@
 <script>
 
   AV.initialize("fcbiiav00avvgzxm8wr34i741bwrhf51d2a7eljgc63xnb69", "v9agclgb58ay2r9le4oim7ti5k3x4rlol2m8iw6lu4i826r3");
-
+  var sending = false;
   function funSubmit(){
     var content = document.getElementById("content").value;
     var contact = document.getElementById("contact").value;
@@ -74,54 +74,34 @@
     if (contact.length < 3){
       contact = "no contact";
     }
-
-    AV.Cloud.run("addComment", {content: content, contact: contact}, {
-      success: function(data){
-        showNotify("发送成功");
-      },
-      error: function(err){
-        showNotify("发送失败");
-      }
-    });
-
-    var eee;
+    if (sending == false){
+      AV.Cloud.run("addComment", {content: content, contact: contact}, {
+        success: function(data){
+          showNotify("发送成功");
+          sending = false;
+        },
+        error: function(err){
+          showNotify("发送失败");
+          sending = false;
+        }
+      });
+      showNotify("发送中");
+      sending = true;
+    }
   };
 
 
   function showNotify(message){
+
     new PNotify({
         title: message,
-        icon: 'alert-warning',
-        animation:  function(status, callback, elem) {
-        var source_note = 'Always call the callback when the animation completes.';
-        var cur_angle = 0,
-            cur_opacity_scale = 0;
-        if (status == 'out') cur_opacity_scale = 1;
-        var timer = setInterval(function() {
-            cur_angle += 10;
-            if (cur_angle == 360) {
-                cur_angle = 0;
-                cur_opacity_scale = 1;
-                if (status == 'out') cur_opacity_scale = 0;
-                clearInterval(timer);
-            } else {
-                cur_opacity_scale = cur_angle / 360;
-                if (status == 'out') cur_opacity_scale = 1 - cur_opacity_scale;
-            }
-            elem.css({
-                '-moz-transform': ('rotate(' + cur_angle + 'deg) scale(' + cur_opacity_scale + ')'),
-                '-webkit-transform': ('rotate(' + cur_angle + 'deg) scale(' + cur_opacity_scale + ')'),
-                '-o-transform': ('rotate(' + cur_angle + 'deg) scale(' + cur_opacity_scale + ')'),
-                '-ms-transform': ('rotate(' + cur_angle + 'deg) scale(' + cur_opacity_scale + ')'),
-                'filter': ('progid:DXImageTransform.Microsoft.BasicImage(rotation=' + (cur_angle / 360 * 4) + ')')
-            }).fadeTo(0, cur_opacity_scale);
-            if (cur_angle == 0) {
-                if (status == 'out') elem.hide();
-                callback();
-            }
-        }, 20);
-    }
-});
+        animation: {
+            effect_in: 'show',
+            effect_out: 'slide'
+        }
+    });
+
+
   };
 
 </script>
