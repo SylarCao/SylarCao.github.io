@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    * Author:         BeiYuu
+    -->
+    <meta charset="utf-8" />
+    <title>Sylar</title>
+    <meta name="author" content="Sylar" />
+    <meta name="description" content="Sylar's Blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/css/default.css" type="text/css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="" />
+    <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="home-menu">
+        <div class="home-icon-con">
+            <a class="home-menu-icon" href="/">Sylar</a>
+            <a class="home-follow" href="#" title="Contact Me">+</a>
+        </div>
+        <div class="home-contact">
+            <a href="http://weibo.com/beiyuu/" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
+            <a href="http://www.douban.com/people/beiyuu/" target="_blank" style="text-align:center;"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
+            <a href="http://instagram.com/beiyuu/" target="_blank" style="text-align:right"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="/js/prettify/prettify.css" />
+<style type="text/css">
+    body { background:#e8e8e8; }
+    @media screen and (max-width: 750px){
+        body { background:#fff; }
+    }
+    @media screen and (max-width: 1020px){
+        body { background:#fff; }
+    }
+</style>
+
+<div id="content">
+    <div class="entry">
+        <h1 class="entry-title"><a href="/blog/2015/05/12/nsstring.html" title="NSString属性什么时候用copy，什么时候用strong?">NSString属性什么时候用copy，什么时候用strong?</a></h1>
+        <p class="entry-date">2015-05-12</p>
+        <blockquote>
+  <p><a href="http://www.cocoachina.com/ios/20150512/11805.html" class="external" target="_blank">转自：http://www.cocoachina.com/ios/20150512/11805.html</a>
+<br /></p>
+</blockquote>
+
+<div class="detail-main">
+
+      <div id="detailbody" class="field_body">
+        <p style="text-align:center"><img src="http://cc.cocimg.com/api/uploads/20150511/1431326886880460.jpg" title="1431326886880460.jpg" alt="1.jpg" /></p><p>我们在声明一个NSString属性时，对于其内存相关特性，通常有两种选择(基于ARC环境)：strong与copy。那这两者有什么区别呢？什么时候该用strong，什么时候该用copy呢？让我们先来看个例子。<br /></p><p><span style="color: rgb(0, 176, 80);"><strong>示例</strong></span></p><p>我们定义一个类，并为其声明两个字符串属性，如下所示：</p><div><div id="highlighter_381091" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">@interface&nbsp;TestStringClass&nbsp;()</code></div><div class="line number2 index1 alt1"><code class="js plain">@property&nbsp;(nonatomic,&nbsp;strong)&nbsp;NSString&nbsp;*strongString;</code></div><div class="line number3 index2 alt2"><code class="js plain">@property&nbsp;(nonatomic,&nbsp;copy)&nbsp;NSString&nbsp;*copyedString;</code></div><div class="line number4 index3 alt1"><code class="js plain">@end</code></div></div></td></tr></tbody></table></div></div><p>上面的代码声明了两个字符串属性，其中一个内存特性是strong，一个是copy。下面我们来看看它们的区别。</p><p>首先，我们用一个不可变字符串来为这两个属性赋值，</p><div><div id="highlighter_30402" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">-&nbsp;(void)test&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">NSString&nbsp;*string&nbsp;=&nbsp;[NSString&nbsp;stringWithFormat:@</code><code class="js string">"abc"</code><code class="js plain">];</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">self.strongString&nbsp;=&nbsp;string;</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">self.copyedString&nbsp;=&nbsp;string;</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">NSLog(@</code><code class="js string">"origin&nbsp;string:&nbsp;%p,&nbsp;%p"</code><code class="js plain">,&nbsp;string,&nbsp;&amp;string);</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">NSLog(@</code><code class="js string">"strong&nbsp;string:&nbsp;%p,&nbsp;%p"</code><code class="js plain">,&nbsp;_strongString,&nbsp;&amp;_strongString);</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">NSLog(@</code><code class="js string">"copy&nbsp;string:&nbsp;%p,&nbsp;%p"</code><code class="js plain">,&nbsp;_copyedString,&nbsp;&amp;_copyedString);</code></div><div class="line number8 index7 alt1"><code class="js plain">}</code></div></div></td></tr></tbody></table></div></div><p>其输出结果是：</p><div><div id="highlighter_135856" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">origin&nbsp;string:&nbsp;0x7fe441592e20,&nbsp;0x7fff57519a48</code></div><div class="line number2 index1 alt1"><code class="js plain">strong&nbsp;string:&nbsp;0x7fe441592e20,&nbsp;0x7fe44159e1f8</code></div><div class="line number3 index2 alt2"><code class="js plain">copy&nbsp;string:&nbsp;0x7fe441592e20,&nbsp;0x7fe44159e200</code></div></div></td></tr></tbody></table></div></div><p>我们要以看到，这种情况下，不管是strong还是copy属性的对象，其指向的地址都是同一个，即为string指向的地址。如果我们换作MRC环境，打印string的引用计数的话，会看到其引用计数值是3，即strong操作和copy操作都使原字符串对象的引用计数值加了1。</p><p>接下来，我们把string由不可变改为可变对象，看看会是什么结果。即将下面这一句</p><div><div id="highlighter_365824" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">NSString&nbsp;*string&nbsp;=&nbsp;[NSString&nbsp;stringWithFormat:@</code><code class="js string">"abc"</code><code class="js plain">];</code></div></div></td></tr></tbody></table></div></div><p>改成：</p><div><div id="highlighter_667558" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">NSMutableString&nbsp;*string&nbsp;=&nbsp;[NSMutableString&nbsp;stringWithFormat:@</code><code class="js string">"abc"</code><code class="js plain">];</code></div></div></td></tr></tbody></table></div></div><p>其输出结果是：</p><div><div id="highlighter_149075" class="syntaxhighlighter  js"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">origin&nbsp;string:&nbsp;0x7ff5f2e33c90,&nbsp;0x7fff59937a48</code></div><div class="line number2 index1 alt1"><code class="js plain">strong&nbsp;string:&nbsp;0x7ff5f2e33c90,&nbsp;0x7ff5f2e2aec8</code></div><div class="line number3 index2 alt2"><code class="js plain">copy&nbsp;string:&nbsp;0x7ff5f2e2aee0,&nbsp;0x7ff5f2e2aed0</code></div></div></td></tr></tbody></table></div></div><p>可以发现，此时copy属性字符串已不再指向string字符串对象，而是深拷贝了string字符串，并让_copyedString对象指向这个字符串。在MRC环境下，打印两者的引用计数，可以看到string对象的引用计数是2，而_copyedString对象的引用计数是1。</p><p>此时，我们如果去修改string字符串的话，可以看到：因为_strongString与string是指向同一对象，所以_strongString的值也会跟随着改变(需要注意的是，此时_strongString的类型实际上是NSMutableString，而不是NSString)；而_copyedString是指向另一个对象的，所以并不会改变。</p><p><span style="color: rgb(0, 176, 80);"><strong>结论</strong></span></p><p>由于NSMutableString是NSString的子类，所以一个NSString指针可以指向NSMutableString对象，让我们的strongString指针指向一个可变字符串是OK的。</p><p>而上面的例子可以看出，当源字符串是NSString时，由于字符串是不可变的，所以，不管是strong还是copy属性的对象，都是指向源对象，copy操作只是做了次浅拷贝。</p><p>当源字符串是NSMutableString时，strong属性只是增加了源字符串的引用计数，而copy属性则是对源字符串做了次深拷贝，产生一个新的对象，且copy属性对象指向这个新的对象。另外需要注意的是，这个copy属性对象的类型始终是NSString，而不是NSMutableString，因此其是不可变的。</p><p>这里还有一个性能问题，即在源字符串是NSMutableString，strong是单纯的增加对象的引用计数，而copy操作是执行了一次深拷贝，所以性能上会有所差异。而如果源字符串是NSString时，则没有这个问题。</p><p>所以，在声明NSString属性时，到底是选择strong还是copy，可以根据实际情况来定。不过，一般我们将对象声明为NSString时，都不希望它改变，所以大多数情况下，我们建议用copy，以免因可变字符串的修改导致的一些非预期问题。</p>
+        <p>关于字符串的内存管理，还有些有意思的东西，可以参考<a href="http://blog.cnbluebox.com/blog/2014/04/16/nsstringte-xing-fen-xi-xue-xi/" target="_self">NSString特性分析学习</a>。</p><p></p>
+      </div>
+
+
+
+    </div>
+
+
+        <!-- <div id="disqus_container">
+            <div style="margin-bottom:20px" class="right">
+                <script type="text/javascript" charset="utf-8">
+                (function(){
+                  var _w = 86 , _h = 16;
+                  var param = {
+                    url:location.href,
+                    type:'6',
+                    count:'', /**是否显示分享数，1显示(可选)*/
+                    appkey:'', /**您申请的应用appkey,显示分享来源(可选)*/
+                    title:'', /**分享的文字内容(可选，默认为所在页面的title)*/
+                    pic:'', /**分享图片的路径(可选)*/
+                    ralateUid:'1855270953', /**关联用户的UID，分享微博会@该用户(可选)*/
+                    language:'zh_cn', /**设置语言，zh_cn|zh_tw(可选)*/
+                    rnd:new Date().valueOf()
+                  }
+                  var temp = [];
+                  for( var p in param ){
+                    temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
+                  }
+                  document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
+                })()
+                </script>
+            </div>
+            <a href="#" class="comment" onclick="return false;">点击查看评论</a>
+            <div id="disqus_thread"></div>
+        </div> -->
+    </div>
+
+<!--     <div class="sidenav">
+        <iframe width="100%" height="75" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=75&fansRow=2&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=1855270953&verifier=375b89d6&dpc=1"></iframe>
+    </div> -->
+
+    <div class = "sidenav" style=" margin-bottom: 20px">
+        <a href = "/sylar/feedback.html"  style = "font-size: 33px;
+                                text-align: center;
+                                font-weight: 600;
+                                text-decoration: none;"> 留言板 </a>
+    </div>
+
+    <div class="sidenav">
+        <h2>Blog</h2>
+        <ul class="artical-list">
+        
+            <li><a href="/blog/2015/05/12/nsstring.html">NSString属性什么时候用copy，什么时候用strong?</a></li>
+        
+            <li><a href="/blog/2015/04/22/autolayout1.html">Auto Layout 使用心得 【转】</a></li>
+        
+            <li><a href="/blog/2015/04/18/p12.html">12小时——我的第二个创业项目</a></li>
+        
+            <li><a href="/blog/2015/04/10/%E5%87%A0%E4%B9%8E%E6%95%B4%E4%B8%AA%E4%BA%92%E8%81%94%E7%BD%91%E8%A1%8C%E4%B8%9A%E9%83%BD%E7%BC%BA%20CTO.html">几乎整个互联网行业都缺 CTO【转】</a></li>
+        
+            <li><a href="/blog/2015/04/07/applewatch.html">apple watch 预言</a></li>
+        
+            <li><a href="/blog/2015/04/02/runtime.html">理解 Objective-C Runtime【转】</a></li>
+        
+            <li><a href="/blog/2015/03/24/%E5%B0%8F%E7%99%BD%E5%AD%A6ruby.html">小白学ruby【基本语法持续更新中】</a></li>
+        
+            <li><a href="/blog/2015/03/24/%E5%90%88%E6%8B%8D%E5%90%A7.html">合拍吧——我的第一个创业项目</a></li>
+        
+            <li><a href="/blog/2015/03/20/%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C.html">如何提升用户体验？手游用户的6个游戏阶段【转】</a></li>
+        
+            <li><a href="/blog/2015/03/18/hello-world.html">Hello World - 如何用 Github 建立个人博客</a></li>
+        
+        </ul>
+    </div>
+</div>
+
+<script src="/js/post.js" type="text/javascript"></script>
+
+
+    <!--*********************************************************-->
+    <!--****** 宝贝儿，看见这个时候，删掉下面的统计代码哦~ ******-->
+    <!--************* 再推荐下我的第一篇博客哦~~ ****************-->
+    <!--*********************************************************-->
+</body>
+</html>

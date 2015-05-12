@@ -4,13 +4,36 @@
    <title></title>
    <link href="" rel="self" type="application/atom+xml"/>
    <link href="" rel="alternate" type="text/html" />
-   <updated>2015-05-05T17:05:03+08:00</updated>
+   <updated>2015-05-12T13:42:35+08:00</updated>
    <id></id>
    <author>
      <name></name>
      <email></email>
    </author>
 
+   
+   <entry>
+     <title>NSString属性什么时候用copy，什么时候用strong?</title>
+     <link href="http://beiyuu.com/blog/2015/05/12/nsstring.html"/>
+     <updated>2015-05-12T00:00:00+08:00</updated>
+     <id>http://beiyuu.com/blog/2015/05/12/nsstring</id>
+     <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://www.cocoachina.com/ios/20150512/11805.html&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;转自：http://www.cocoachina.com/ios/20150512/11805.html&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;detail-main&quot;&gt;
+
+      &lt;div id=&quot;detailbody&quot; class=&quot;field_body&quot;&gt;
+        &lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;http://cc.cocimg.com/api/uploads/20150511/1431326886880460.jpg&quot; title=&quot;1431326886880460.jpg&quot; alt=&quot;1.jpg&quot; /&gt;&lt;/p&gt;&lt;p&gt;我们在声明一个NSString属性时，对于其内存相关特性，通常有两种选择(基于ARC环境)：strong与copy。那这两者有什么区别呢？什么时候该用strong，什么时候该用copy呢？让我们先来看个例子。&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 176, 80);&quot;&gt;&lt;strong&gt;示例&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;我们定义一个类，并为其声明两个字符串属性，如下所示：&lt;/p&gt;&lt;div&gt;&lt;div id=&quot;highlighter_381091&quot; class=&quot;syntaxhighlighter  js&quot;&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line number2 index1 alt1&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line number3 index2 alt2&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line number4 index3 alt1&quot;&gt;4&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;@interface&amp;nbsp;TestStringClass&amp;nbsp;()&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number2 index1 alt1&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;@property&amp;nbsp;(nonatomic,&amp;nbsp;strong)&amp;nbsp;NSString&amp;nbsp;*strongString;&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number3 index2 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;@property&amp;nbsp;(nonatomic,&amp;nbsp;copy)&amp;nbsp;NSString&amp;nbsp;*copyedString;&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number4 index3 alt1&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;@end&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;上面的代码声明了两个字符串属性，其中一个内存特性是strong，一个是copy。下面我们来看看它们的区别。&lt;/p&gt;&lt;p&gt;首先，我们用一个不可变字符串来为这两个属性赋值，&lt;/p&gt;&lt;div&gt;&lt;div id=&quot;highlighter_30402&quot; class=&quot;syntaxhighlighter  js&quot;&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line number2 index1 alt1&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line number3 index2 alt2&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line number4 index3 alt1&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line number5 index4 alt2&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line number6 index5 alt1&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line number7 index6 alt2&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line number8 index7 alt1&quot;&gt;8&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;-&amp;nbsp;(void)test&amp;nbsp;{&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number2 index1 alt1&quot;&gt;&lt;code class=&quot;js spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;NSString&amp;nbsp;*string&amp;nbsp;=&amp;nbsp;[NSString&amp;nbsp;stringWithFormat:@&lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;abc&quot;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;];&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number3 index2 alt2&quot;&gt;&lt;code class=&quot;js spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;self.strongString&amp;nbsp;=&amp;nbsp;string;&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number4 index3 alt1&quot;&gt;&lt;code class=&quot;js spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;self.copyedString&amp;nbsp;=&amp;nbsp;string;&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number5 index4 alt2&quot;&gt;&lt;code class=&quot;js spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;NSLog(@&lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;origin&amp;nbsp;string:&amp;nbsp;%p,&amp;nbsp;%p&quot;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;,&amp;nbsp;string,&amp;nbsp;&amp;amp;string);&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number6 index5 alt1&quot;&gt;&lt;code class=&quot;js spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;NSLog(@&lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;strong&amp;nbsp;string:&amp;nbsp;%p,&amp;nbsp;%p&quot;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;,&amp;nbsp;_strongString,&amp;nbsp;&amp;amp;_strongString);&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number7 index6 alt2&quot;&gt;&lt;code class=&quot;js spaces&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;NSLog(@&lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;copy&amp;nbsp;string:&amp;nbsp;%p,&amp;nbsp;%p&quot;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;,&amp;nbsp;_copyedString,&amp;nbsp;&amp;amp;_copyedString);&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number8 index7 alt1&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;}&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;其输出结果是：&lt;/p&gt;&lt;div&gt;&lt;div id=&quot;highlighter_135856&quot; class=&quot;syntaxhighlighter  js&quot;&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line number2 index1 alt1&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line number3 index2 alt2&quot;&gt;3&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;origin&amp;nbsp;string:&amp;nbsp;0x7fe441592e20,&amp;nbsp;0x7fff57519a48&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number2 index1 alt1&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;strong&amp;nbsp;string:&amp;nbsp;0x7fe441592e20,&amp;nbsp;0x7fe44159e1f8&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number3 index2 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;copy&amp;nbsp;string:&amp;nbsp;0x7fe441592e20,&amp;nbsp;0x7fe44159e200&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;我们要以看到，这种情况下，不管是strong还是copy属性的对象，其指向的地址都是同一个，即为string指向的地址。如果我们换作MRC环境，打印string的引用计数的话，会看到其引用计数值是3，即strong操作和copy操作都使原字符串对象的引用计数值加了1。&lt;/p&gt;&lt;p&gt;接下来，我们把string由不可变改为可变对象，看看会是什么结果。即将下面这一句&lt;/p&gt;&lt;div&gt;&lt;div id=&quot;highlighter_365824&quot; class=&quot;syntaxhighlighter  js&quot;&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;NSString&amp;nbsp;*string&amp;nbsp;=&amp;nbsp;[NSString&amp;nbsp;stringWithFormat:@&lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;abc&quot;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;];&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;改成：&lt;/p&gt;&lt;div&gt;&lt;div id=&quot;highlighter_667558&quot; class=&quot;syntaxhighlighter  js&quot;&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;NSMutableString&amp;nbsp;*string&amp;nbsp;=&amp;nbsp;[NSMutableString&amp;nbsp;stringWithFormat:@&lt;/code&gt;&lt;code class=&quot;js string&quot;&gt;&quot;abc&quot;&lt;/code&gt;&lt;code class=&quot;js plain&quot;&gt;];&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;其输出结果是：&lt;/p&gt;&lt;div&gt;&lt;div id=&quot;highlighter_149075&quot; class=&quot;syntaxhighlighter  js&quot;&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line number2 index1 alt1&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line number3 index2 alt2&quot;&gt;3&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;container&quot;&gt;&lt;div class=&quot;line number1 index0 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;origin&amp;nbsp;string:&amp;nbsp;0x7ff5f2e33c90,&amp;nbsp;0x7fff59937a48&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number2 index1 alt1&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;strong&amp;nbsp;string:&amp;nbsp;0x7ff5f2e33c90,&amp;nbsp;0x7ff5f2e2aec8&lt;/code&gt;&lt;/div&gt;&lt;div class=&quot;line number3 index2 alt2&quot;&gt;&lt;code class=&quot;js plain&quot;&gt;copy&amp;nbsp;string:&amp;nbsp;0x7ff5f2e2aee0,&amp;nbsp;0x7ff5f2e2aed0&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;可以发现，此时copy属性字符串已不再指向string字符串对象，而是深拷贝了string字符串，并让_copyedString对象指向这个字符串。在MRC环境下，打印两者的引用计数，可以看到string对象的引用计数是2，而_copyedString对象的引用计数是1。&lt;/p&gt;&lt;p&gt;此时，我们如果去修改string字符串的话，可以看到：因为_strongString与string是指向同一对象，所以_strongString的值也会跟随着改变(需要注意的是，此时_strongString的类型实际上是NSMutableString，而不是NSString)；而_copyedString是指向另一个对象的，所以并不会改变。&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 176, 80);&quot;&gt;&lt;strong&gt;结论&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;由于NSMutableString是NSString的子类，所以一个NSString指针可以指向NSMutableString对象，让我们的strongString指针指向一个可变字符串是OK的。&lt;/p&gt;&lt;p&gt;而上面的例子可以看出，当源字符串是NSString时，由于字符串是不可变的，所以，不管是strong还是copy属性的对象，都是指向源对象，copy操作只是做了次浅拷贝。&lt;/p&gt;&lt;p&gt;当源字符串是NSMutableString时，strong属性只是增加了源字符串的引用计数，而copy属性则是对源字符串做了次深拷贝，产生一个新的对象，且copy属性对象指向这个新的对象。另外需要注意的是，这个copy属性对象的类型始终是NSString，而不是NSMutableString，因此其是不可变的。&lt;/p&gt;&lt;p&gt;这里还有一个性能问题，即在源字符串是NSMutableString，strong是单纯的增加对象的引用计数，而copy操作是执行了一次深拷贝，所以性能上会有所差异。而如果源字符串是NSString时，则没有这个问题。&lt;/p&gt;&lt;p&gt;所以，在声明NSString属性时，到底是选择strong还是copy，可以根据实际情况来定。不过，一般我们将对象声明为NSString时，都不希望它改变，所以大多数情况下，我们建议用copy，以免因可变字符串的修改导致的一些非预期问题。&lt;/p&gt;
+        &lt;p&gt;关于字符串的内存管理，还有些有意思的东西，可以参考&lt;a href=&quot;http://blog.cnbluebox.com/blog/2014/04/16/nsstringte-xing-fen-xi-xue-xi/&quot; target=&quot;_self&quot;&gt;NSString特性分析学习&lt;/a&gt;。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+      &lt;/div&gt;
+
+
+
+    &lt;/div&gt;
+</content>
+   </entry>
    
    <entry>
      <title>Auto Layout 使用心得 【转】</title>
@@ -727,79 +750,6 @@ computeNum(obj,@selector(doComputeWithNum:),aNum);
 &lt;p&gt;一周之后，游戏大部分的内容玩家都已经玩过了并且很熟悉了，或者说已经枯燥了。虽然没有将游戏内容全部消耗完(打通所有副本，获得所有武将……)但是玩家对现有内容已经提不起兴趣了。&lt;/p&gt;
 &lt;p&gt;巴特尔将游戏用户分为4类：成就者，探险家，社交家，杀手。长期来看，成就和探索是很难满足的，因为他们高度依赖游戏内容。社交家和杀手的需求是可以持续满足的，因为他们不消耗游戏内容，只有有玩家，有竞争，就能持续满足这2类用户的需求。所以很多游戏在很末期的时候，用户上游戏不是为了玩游戏，而是进游戏跟这些战友聊聊天。&lt;/p&gt;
   &lt;/div&gt;
-</content>
-   </entry>
-   
-   <entry>
-     <title>Hello World - 如何用 Github 建立个人博客</title>
-     <link href="http://beiyuu.com/blog/2015/03/18/hello-world.html"/>
-     <updated>2015-03-18T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/blog/2015/03/18/hello-world</id>
-     <content type="html">&lt;blockquote&gt;&lt;p style=&quot;
-    color: gray;
-&quot;&gt;某程序员退休后决定练习书法，于是重金购买文房四宝。一日，饭后突生雅兴，一番研墨拟纸，并点上上好檀香。定神片刻，泼墨挥毫，郑重地写下一行字：hello world!&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;感谢&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;感谢Github提供这样一个写博客的平台&lt;/li&gt;
-  &lt;li&gt;感谢我的码友兼高中同桌&lt;a href=&quot;http://kimmykuang.github.io/&quot;&gt;Kimmy&lt;/a&gt;帮助我搭建这个博客&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;github-&quot;&gt;如何用 Github 建立个人博客&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Mac 环境
-    &lt;ul&gt;
-      &lt;li&gt;搭建好 Github 环境 &lt;a href=&quot;https://help.github.com/articles/set-up-git/&quot;&gt;安装教程&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;新建一个 Repository 名字叫 yourname.github.io&lt;/li&gt;
-      &lt;li&gt;提交一个 index.html 文件，然后 push 到 GitHub 的 master 分支&lt;/li&gt;
-      &lt;li&gt;访问 yourname.github.io 就可以看到你上传的页面了&lt;/li&gt;
-      &lt;li&gt;for example: &lt;br /&gt;
-curl -X POST http://localhost:3000/smartcooler/pi -H “Content-Type:application/json” –data ‘{“type”:”temperature”, “data”:{“temp_f”:”1245”}}’
-&lt;!-- + 本人是写ios出生，第一次建立网页，具体参考[这篇文章][link1] --&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;本地调试&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Mac 环境
-    &lt;ul&gt;
-      &lt;li&gt;安装 jekyll &lt;a href=&quot;http://kimmykuang.github.io/local-jekyll.html&quot;&gt;本地Jekyll环境的搭建&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;打开 terminal 输入 &lt;code&gt;jekyll -v&lt;/code&gt; 查看版本&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;pre class=&quot;prettyprint linenums&quot;&gt;
-  $ jekyll -v
-  jekyll 2.5.3
-&lt;/pre&gt;
-    &lt;ul&gt;
-      &lt;li&gt;在 terminal 里 cd 到项目目录，输入 &lt;code&gt;jekyll serve --watch&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;浏览器访问 http://localhost:4000 即可&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;可能遇到问题
-    &lt;ul&gt;
-      &lt;li&gt;&lt;img src=&quot;/images/1/hello_world_error1.jpeg&quot; alt=&quot;Alt text&quot; /&gt;&lt;/li&gt;
-      &lt;li&gt;解决方案
-        &lt;ul&gt;
-          &lt;li&gt;ruby 版本到2.1.1 即可&lt;/li&gt;
-          &lt;li&gt;&lt;code&gt;rvm use ruby-2.1.1&lt;/code&gt;&lt;/li&gt;
-          &lt;li&gt;参考 &lt;a href=&quot;https://github.com/jekyll/jekyll/issues/2125&quot;&gt;https://github.com/jekyll/jekyll/issues/2125&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;section-2&quot;&gt;参考&lt;/h2&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;http://beiyuu.com/github-pages&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;http://beiyuu.com/github-pages&lt;/a&gt;
-&lt;br /&gt;
-&lt;a href=&quot;http://kimmykuang.github.io/local-jekyll.html&quot;&gt;http://kimmykuang.github.io/local-jekyll.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;!-- 注释 --&gt;
-
 </content>
    </entry>
    
