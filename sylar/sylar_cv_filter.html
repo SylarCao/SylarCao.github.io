@@ -1,0 +1,192 @@
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Sylar</title>
+  <script src="/bower_components/moment/moment.js"></script>
+   <script src="https://leancloud.cn/scripts/lib/av-0.5.1.min.js"></script>
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <script type="text/javascript" src="/bower_components/pnotify/pnotify.custom.min.js"></script>
+  <link href="/bower_components/pnotify/pnotify.custom.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body style="
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(226, 240, 17, 0.13);
+">
+
+
+
+<h1> 曹继冶 </h1>
+<ul>
+  <li> 男  1989年</li>
+  <li> 上海交通大学  电子与计算机工程</li>
+</ul>
+
+
+<br/>
+
+<br/>
+
+<h2> 查看更多内容请输入密码 </h2>
+<h3> 密码提示: </h3>
+<h3>   >++++++++[<+++++++++++>-]<-.++++++++++++++.+++++++.---------.++++++++++++.--.--------. <h3>
+
+<h4> 本功能仅为过滤那些不靠谱的公司，答案很简单，普通程序员1-5分钟就能搞定 </h4>
+<input id = "input_value" type = "input" style = " height: 36px;
+                                font-size: 20px;
+                                border-radius: 5px;
+                                "   value=""/>
+
+<input style="background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    outline-width: 0px; "
+     type = "submit" onclick = "fun1()" value = "submit"/>
+
+
+
+<br/>
+<br/>
+
+<div id="link_correct_div" hidden="true">
+  <br>
+<span><a id="link_correct_a"  href="/sylar/sylar_cv_filter.html"> 密码正确，页面跳转中，没有跳转请点击这里 </a></span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span id="count_down"> 3 </span>
+
+</div>
+
+<div>
+
+<br>
+<br>
+<input style="background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    outline-width: 0px;
+    padding: 30px;"
+     type = "submit" onclick = "toComment()" value = "我不知道，我要留言"/>
+
+</div>
+
+</body>
+
+
+<script>
+
+  AV.initialize("fcbiiav00avvgzxm8wr34i741bwrhf51d2a7eljgc63xnb69", "v9agclgb58ay2r9le4oim7ti5k3x4rlol2m8iw6lu4i826r3");
+
+  function fun1(){
+
+    var word = document.getElementById("input_value").value;
+    if (word.length > 1){
+      AV.Cloud.run("CheckCVPassword", {content: word}, {
+        success: function(data){
+          showNotify("密码正确");
+          document.getElementById("link_correct_div").hidden = false;
+          document.getElementById("link_correct_a").href = data;
+          // save password
+          savePassword(data);
+          // 自我跳转
+          linkCorrect(data);
+        },
+        error: function(err){
+          showNotify("密码错误");
+        }
+      });
+    }
+    else{
+      showNotify("请输入密码");
+    }
+  };
+
+  function toComment(){
+    window.location = ("/sylar/feedback.html");
+  };
+
+  function savePassword(password){
+    var time0 = moment().format('X');
+    window.localStorage.sylarTime0 = time0;
+    window.localStorage.sylarPassowrd = password;
+  };
+
+
+  function showNotify(message){
+    new PNotify({
+        title: message,
+        animation: {
+            effect_in: 'show',
+            effect_out: 'slide'
+        }
+    });
+  };
+
+  function linkCorrect(link_url){
+    setTimeout(function(){
+      document.getElementById("count_down").innerText = "2";
+    }, 1000);
+
+    setTimeout(function(){
+      document.getElementById("count_down").innerText = "1";
+    }, 2000);
+
+    setTimeout(function(){
+      window.location = (link_url);
+    }, 3000);
+
+  };
+
+
+</script>
+
+
+<script>
+// view did load
+  var time0 = moment().format('X');
+  var storage_time0 = window.localStorage.sylarTime0;
+  var delta_time = time0 - storage_time0;
+  var url = window.localStorage.sylarPassowrd;
+
+  $.ajax({
+    type: 'HEAD',
+    url: url,
+    success: function() {
+      if (delta_time <= 20){
+        // auto 跳转
+        var password = window.localStorage.sylarPassowrd;
+        document.getElementById("link_correct_div").hidden = false;
+        document.getElementById("link_correct_a").href = password;
+        savePassword(password);
+        linkCorrect(password);
+      }
+      else{
+        window.localStorage.sylarPassowrd = "abc";
+        window.localStorage.sylarTime0 = 0;
+      }
+    },
+    error: function() {
+      // did nothing
+    }
+  });
+
+</script>
+
+
+
+
