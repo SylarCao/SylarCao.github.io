@@ -4,13 +4,48 @@
    <title></title>
    <link href="" rel="self" type="application/atom+xml"/>
    <link href="" rel="alternate" type="text/html" />
-   <updated>2015-06-15T14:50:12+08:00</updated>
+   <updated>2015-07-09T14:06:57+08:00</updated>
    <id></id>
    <author>
      <name></name>
      <email></email>
    </author>
 
+   
+   <entry>
+     <title>用户想要的功能就该给吗？新产品开发如何跳出“死亡循环”【转】</title>
+     <link href="http://beiyuu.com/blog/2015/07/09/user_requirement.html"/>
+     <updated>2015-07-09T00:00:00+08:00</updated>
+     <id>http://beiyuu.com/blog/2015/07/09/user_requirement</id>
+     <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://36kr.com/p/5035284.html&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;转自：http://36kr.com/p/5035284.html&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;新产品在推广过程中肯定会遇到很多障碍，如果处理不好则有可能会陷入到“产品死亡循环”（Product Death Cycle）。这个概念是一年前我从管理咨询顾问David Bland那里学到的，他当时发表了一条推文：&lt;/p&gt;
+&lt;blockquote&gt;这就是我所说的产品死亡循环——@davidbland&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt=&quot;Image title&quot; src=&quot;http://a.36krcnd.com/nil_class/9ca04e00-e572-48ed-bc59-32cbcde11f5d/product_death_cycle.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;没人使用我们的产品→询问消费者缺少了什么功能→开发缺失的功能&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;一年过去了，这条推文引发了许多人的共鸣，因为我们见证过太多次“产品死亡循环”的发生，很多人也曾亲身经历过类似的困境。&lt;/p&gt;
+&lt;p&gt;那么，到底为什么会出现这种现象，又该如何避免呢？我们首先来分析一下产品死亡循环的3个环节：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1）没人使用我们的产品&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对于任何新产品来说，没人使用都是正常现象，所以没有用户并不可怕，但此时你的应对方式则有可能使你陷入产品死亡循环中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2）询问消费者缺少了什么功能&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;产品开发人员在早期很容易犯的一个错误就是完全被用户牵着鼻子走，而没有自己的产品观。这种错误的表现形式就是询问消费者“还缺少什么功能？”。但是这类问题实际上并不能帮到你，有以下几点原因：&lt;/p&gt;
+&lt;ul&gt;   &lt;li&gt;现阶段喜爱你产品的用户并不一定能代表更广大市场上那些还没有用过你产品的人。所以，你现在得到的反馈只代表一小部分群体，他们推荐的功能可能并不是主流用户所需要的。&lt;/li&gt;   &lt;li&gt;在遇到设计上的问题时，用户调查非常有效，但你不能指望用户拿出他们的解决方案，这是你的工作！他们在遇到一个特定的问题时，可能并没有足够的工具或技能来解决。比如在没有汽车之前，人们想要更加快捷的交通，只能寄希望拥有一匹跑得更快的马。&lt;/li&gt;   &lt;li&gt;“还缺少什么功能？”这样的问题是建立在一个错误的基础上的，那就是认为增加了用户所需的功能就能解决产品遇到的障碍了。但实际上，产品开发遇到困难的原因可能是多方面的，比如是不是定价出了问题？是不是市场营销做的不好？产品的激活方式有没有问题？产品的布局是不是很糟糕？&lt;/li&gt; &lt;/ul&gt;
+&lt;p&gt;所以，不要问用户还需要什么样的功能，你应该寻找用户不喜爱产品的根本原因，了解产品发展的瓶颈究竟在哪。实际上，&lt;a href=&quot;http://andrewchen.co/new-data-shows-why-losing-80-of-your-mobile-users-is-normal-and-that-the-best-apps-do-much-better/&quot; target=&quot;_blank&quot;&gt;有调查显示&lt;/a&gt;，对于很多产品来说，有80%的日活用户会在30天之内放弃产品，也就是说很多用户在没有深入体验你的产品时可能就已经离开了。在这种情况下，询问用户需要什么样的功能并没有太大帮助，只会给你的产品添加一大堆乱七八糟的功能，最终结果只能是把用户进一步推向竞争对手。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3）开发缺失的功能&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;很多开发者在听从了用户的需求之后就开始补全这些“缺失”的功能了。他们错误地认为，只要加上一两个新功能，用户就会接受整个产品了。&lt;/p&gt;
+&lt;p&gt;实际上，对于一款产品来说，从访问到注册再到持续使用的每个环节损失的用户都是非常多的。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Image title&quot; src=&quot;http://a.36krcnd.com/nil_class/041cefef-cb4a-47a8-95f6-862e95361b3e/Screenshot-2015-05-31-19.50.54.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;访问——注册——开始使用——第1天——第7天——第30天&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;用户与产品的大多数交互都发生在最初几次访问上。因此，为了更长久地留存用户，你需要在这个环节多下功夫，要给用户足够的惊喜。相反，开发一堆“缺失的”功能根本无法补齐用户体验最薄弱的地方，也就是用户最先接触产品的部分。如果你开发的新功能主要是加强产品的核心部分，那么你必须同步提升产品的整体使用流程，否则用户根本深入不到这里。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;跳出产品死亡循环&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;要跳出产品死亡循环其实并不容易，因为处在这个循环中的人往往认为自己在做正确的事情——听从用户需求、满足用户需求。但是，正确的动机并不一定会带来好的结果，满足了用户对某个特定功能的需求并没有真正帮他们解决问题。你所应该做的，就是不断地刨根问底，理解阻碍产品发展的根本原因是什么。&lt;/p&gt;
+&lt;p&gt;这个根本原因可以从多方面去寻找，比如市场营销、定价、产品布局、分发、公关、内容营销等等；也有可能是产品的战略出了问题：是走高端路线还是保持低端亲民？是开发一款实用的工具型的产品还是一款利用网络效应的社交产品。具体的方法有很多，但是核心的一点在于：你对于产品做出的任何修改都应该是为了解决产品发展中的根本问题，而不是产品团队不断开发新功能的冲动。&lt;/p&gt;
+
+</content>
+   </entry>
    
    <entry>
      <title>iOS多线程编程之Grand Central Dispatch(GCD)介绍和使用【转】</title>
@@ -324,370 +359,6 @@ CEO是这么和我说的，不管他说的是真是假。我们在历经了4个�
      <updated>2015-04-04T00:00:00+08:00</updated>
      <id>http://beiyuu.com/mine/2015/04/04/sylarCV</id>
      <content type="html">
-</content>
-   </entry>
-   
-   <entry>
-     <title>理解 Objective-C Runtime【转】</title>
-     <link href="http://beiyuu.com/blog/2015/04/02/runtime.html"/>
-     <updated>2015-04-02T00:00:00+08:00</updated>
-     <id>http://beiyuu.com/blog/2015/04/02/runtime</id>
-     <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;http://www.cocoachina.com/ios/20141008/9844.html&quot; class=&quot;external&quot; target=&quot;_blank&quot;&gt;转自：http://www.cocoachina.com/ios/20141008/9844.html&lt;/a&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;entry-content&quot;&gt;
-
-&lt;p&gt;初学 Objective-C(以下简称ObjC) 的人很容易忽略一个 ObjC 特性 —— ObjC Runtime。这是因为这门语言很容易上手，几个小时就能学会怎么使用，所以程序员们往往会把时间都花在了解 Cocoa 框架以及调整自己的程序的表现上。然而 Runtime 应该是每一个 ObjC 都应该要了解的东西，至少要理解编译器会把&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[target doMethodWith:var1];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;编译成：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;objc_msgSend(target,@selector(doMethodWith:),var1);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这样的语句。理解 ObjC Runtime 的工作原理，有助于你更深入地去理解 ObjC 这门语言，理解你的 App 是怎样跑起来的。我想所有的 Mac/iPhone 开发者，无论水平如何，都会从中获益的。&lt;/p&gt;
-&lt;h2&gt;ObjC Runtime 是开源的&lt;/h2&gt;
-&lt;p&gt;ObjC Runtime 的代码是开源的，可以从这个站点下载： &lt;a href=&quot;http://opensource.apple.com/&quot;&gt;opensource.apple.com&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;这个是所有开源代码的链接： &lt;a href=&quot;http://www.opensource.apple.com/source/&quot;&gt;http://www.opensource.apple.com/source/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;这个是ObjC rumtime 的源代码: &lt;a href=&quot;http://www.opensource.apple.com/source/objc4/&quot;&gt;http://www.opensource.apple.com/source/objc4/&lt;/a&gt;&lt;br /&gt;
-4应该代表的是build版本而不是语言版本，现在是ObjC 2.0&lt;/p&gt;
-&lt;h2&gt;动态 vs 静态语言&lt;/h2&gt;
-&lt;p&gt;ObjC 是一种面向runtime(运行时)的语言，也就是说，它会尽可能地把代码执行的决策从编译和链接的时候，推迟到运行时。这给程序员写代码带来很大的灵活性，比如说你可以把消息转发给你想要的对象，或者随意交换一个方法的实现之类的。这就要求 runtime 能检测一个对象是否能对一个方法进行响应，然后再把这个方法分发到对应的对象去。我们拿 C 来跟 ObjC 对比一下。在 C 语言里面，一切从 main 函数开始，程序员写代码的时候是自上而下地，一个 C 的结构体或者说类吧，是不能把方法调用转发给其他对象的。举个栗子：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#include &amp;lt; stdio.h &amp;gt;
-
-int main(int argc, const char **argv[])
-{
-        printf(&quot;Hello World!&quot;);
-        return 0;
-} 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这段代码被编译器解析，优化后，会变成一堆汇编代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.text
- .align 4,0x90
- .globl _main
-_main:
-Leh_func_begin1:
- pushq %rbp
-Llabel1:
- movq %rsp, %rbp
-Llabel2:
- subq $16, %rsp
-Llabel3:
- movq %rsi, %rax
- movl %edi, %ecx
- movl %ecx, -8(%rbp)
- movq %rax, -16(%rbp)
- xorb %al, %al
- leaq LC(%rip), %rcx
- movq %rcx, %rdi
- call _printf
- movl $0, -4(%rbp)
- movl -4(%rbp), %eax
- addq $16, %rsp
- popq %rbp
- ret
-Leh_func_end1:
- .cstring
-LC:
- .asciz &quot;Hello World!&quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后，再链接 include 的库，完了生成可执行代码。对比一下 ObjC，当我们初学这门语言的时候教程是这么说滴：用中括号括起来的语句，&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[self doSomethingWithVar:var1];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;被编译器编译之后会变成：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;objc_msgSend(self,@selector(doSomethingWithVar:),var1);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;一个 C 方法，传入了三个变量，self指针，要执行的方法 @selector(doSomethingWithVar:) 还有一个参数 var1。但是在这之后就不晓得发生什么了。&lt;/p&gt;
-&lt;h2&gt;什么是 Objective-C Runtime?&lt;/h2&gt;
-&lt;p&gt;ObjC Runtime 其实是一个 Runtime 库，基本上用 C 和汇编写的，这个库使得 C 语言有了面向对象的能力（脑中浮现当你乔帮主参观了施乐帕克的 SmallTalk 之后嘴角一抹浅笑）。这个库做的事前就是加载类的信息，进行方法的分发和转发之类的。&lt;/p&gt;
-&lt;h2&gt;Objective-C Runtime 术语&lt;/h2&gt;
-&lt;p&gt;再往下深谈之前咱先介绍几个术语。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;2 Runtimes
-&lt;p&gt;目前说来Runtime有两种，一个 Modern Runtime 和一个 Legacy Runtime。Modern Runtime 覆盖了64位的Mac OS X Apps，还有 iOS Apps，Legacy Runtime 是早期用来给32位 Mac OS X Apps 用的，也就是可以不用管就是了。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;2 Basic types of Methods
-&lt;p&gt;一种 Instance Method，还有 Class Method。instance method 就是带“-”号的，需要实例化才能用的，如 :&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;-(void)doFoo; 
-
-[aObj doFoot];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Class Method 就是带“+”号的，类似于静态方法可以直接调用：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;+(id)alloc;
-
-[ClassName alloc];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这些方法跟 C 函数一样，就是一组代码，完成一个比较小的任务。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;-(NSString *)movieTitle
-{
-    return @&quot;Futurama: Into the Wild Green Yonder&quot;;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;Selector
-&lt;p&gt;一个 Selector 事实上是一个 C 的结构体，表示的是一个方法。定义是：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;typedef struct objc_selector  *SEL; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;使用起来就是：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;SEL aSel = @selector(movieTitle); 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这样可以直接取一个selector，如果是传递消息（类似于C的方法调用）就是：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[target getMovieTitleForObject:obj];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;在 ObjC 里面，用&#39;[]’括起来的表达式就是一个消息。包括了一个 target，就是要接收消息的对象，一个要被调用的方法还有一些你要传递的参数。类似于 C 函数的调用，但是又有所不同。事实上上面这个语句你仅仅是传递了 ObjC 消息，并不代表它就会一定被执行。target 这个对象会检测是谁发起的这个请求，然后决策是要执行这个方法还是其他方法，或者转发给其他的对象。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;Class
-&lt;p&gt;Class 的定义是这样的：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;typedef struct objc_class *Class;
-typedef struct objc_object {
-    Class isa;
-} *id; 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;我们可以看到这里这里有两个结构体，一个类结构体一个对象结构体。所有的 objc_object 对象结构体都有一个 isa 指针，这个 isa 指向它所属的类，在运行时就靠这个指针来检测这个对象是否可以响应一个 selector。完了我们看到最后有一个 id 指针。这个指针其实就只是用来代表一个 ObjC 对象，有点类似于 C++ 的泛型。当你拿到一个 id 指针之后，就可以获取这个对象的类，并且可以检测其是否响应一个 selector。这就是对一个 delegate 常用的调用方式啦。这样说还有点抽象，我们看看 LLVM/Clang 的文档对 Blocks 的定义：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; struct Block_literal_1 {
-    void *isa; // initialized to &amp;amp;_NSConcreteStackBlock or &amp;amp;_NSConcreteGlobalBlock
-    int flags;
-    int reserved; 
-    void (*invoke)(void *, ...);
-    struct Block_descriptor_1 {
- unsigned long int reserved; // NULL
-     unsigned long int size;  // sizeof(struct Block_literal_1)
- // optional helper functions
-     void (*copy_helper)(void *dst, void *src);
-     void (*dispose_helper)(void *src); 
-    } *descriptor;
-    // imported variables
-};
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;可以看到一个 block 是被设计成一个对象的，拥有一个 isa 指针，所以你可以对一个 block 使用 retain, release, copy 这些方法。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;IMP (Method Implementations)
-&lt;p&gt;接下来看看啥是IMP。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;typedef id (*IMP)(id self,SEL _cmd,...); 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;一个 IMP 就是一个函数指针，这是由编译器生成的，当你发起一个 ObjC 消息之后，最终它会执行的那个代码，就是由这个函数指针指定的。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;Objective-C Classes
-&lt;p&gt;OK，回过头来看看一个 ObjC 的类。举一个栗子：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;@interface MyClass : NSObject {
-//vars
-NSInteger counter;
-}
-//methods
--(void)doFoo;
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;定义一个类我们可以写成如上代码，而在运行时，一个类就不仅仅是上面看到的这些东西了：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#if !__OBJC2__
-    Class super_class                                        OBJC2_UNAVAILABLE;
-    const char *name                                         OBJC2_UNAVAILABLE;
-    long version                                             OBJC2_UNAVAILABLE;
-    long info                                                OBJC2_UNAVAILABLE;
-    long instance_size                                       OBJC2_UNAVAILABLE;
-    struct objc_ivar_list *ivars                             OBJC2_UNAVAILABLE;
-    struct objc_method_list **methodLists                    OBJC2_UNAVAILABLE;
-    struct objc_cache *cache                                 OBJC2_UNAVAILABLE;
-    struct objc_protocol_list *protocols                     OBJC2_UNAVAILABLE;
-#endif 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;可以看到运行时一个类还关联了它的父类指针，类名，成员变量，方法，cache 还有附属的 protocol。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;那么类定义了对象并且自己也是个对象？这是咋整滴？&lt;/h2&gt;
-&lt;p&gt;上面我提到过一个 ObjC 类同时也是一个对象，为了处理类和对象的关系，runtime 库创建了一种叫做 &lt;del&gt;标签类&lt;/del&gt; 元类（Meta Class）的东西。当你发出一个消息的时候，比方说&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[NSObject alloc];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;你事实上是把这个消息发给了一个类对象（Class Object），这个类对象必须是一个 Meta Class 的实例，而这个 Meta Class 同时也是一个根 MetaClass 的实例。当你继承了 NSObject 成为其子类的时候，你的类指针就会指向 NSObject 为其父类。但是 Meta Class 不太一样，所有的 Meta Class 都指向根 Meta Class 为其父类。一个 Meta Class 持有所有能响应的方法。所以当 [NSObject alloc] 这条消息发出的时候，objc_msgSend() 这个方法会去 NSObject 它的 Meta Class 里面去查找是否有响应这个 selector 的方法，然后对 NSObject 这个类对象执行方法调用。&lt;/p&gt;
-&lt;h2&gt;为啥我们要继承 Apple Classes&lt;/h2&gt;
-&lt;p&gt;初学 Cocoa 开发的时候，多数教程都要我们继承一个类比方 NSObject，然后我们就开始 Coding 了。比方说：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;MyObject *object = [[MyObject alloc] init];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这个语句用来初始化一个实例，类似于 C++ 的 new 关键字。这个语句首先会执行 MyObject 这个类的 +alloc 方法，Apple 的官方文档是这样说的：&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;
-  The isa instance variable of the new instance is initialized to a data structure that describes the class; memory for all other instance variables is set to 0.&lt;/p&gt;
-&lt;p&gt;  新建的实例中，isa 成员变量会变初始化成一个数据结构体，用来描述所指向的类。其他的成员变量的内存会被置为0.
-&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;所以继承 Apple 的类我们不仅是获得了很多很好用的属性，而且也继承了这种内存分配的方法。&lt;/p&gt;
-&lt;h2&gt;那么啥是 Class Cache(objc_cache *cache)&lt;/h2&gt;
-&lt;p&gt;刚刚我们看到 runtime 里面有一个指针叫 objc_cache *cache，这是用来缓存方法调用的。现在我们知道一个实例对象被传递一个消息的时候，它会根据 isa 指针去查找能够响应这个消息的对象。但是实际上我们在用的时候，只有一部分方法是常用的，很多方法其实很少用或者根本用不到。比如一个object你可能从来都不用copy方法，那我要是每次调用的时候还去遍历一遍所有的方法那就太笨了。于是 cache 就应运而生了，每次你调用过一个方法，之后，这个方法就会被存到这个 cache 列表里面去，下次调用的时候 runtime 会优先去 cache 里面查找，提高了调用的效率。举一个栗子：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;MyObject *obj = [[MyObject alloc] init]; // MyObject 的父类是 NSObject
-
-@implementation MyObject
--(id)init {
-    if(self = [super init]){
-        [self setVarA:@”blah”];
-    }
-    return self;
-}
-@end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这段代码是这样执行的：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;[MyObject alloc] 先被执行。但是由于 MyObject 这个类没有 +alloc 这个方法，于是去父类 NSObject 查找。&lt;/li&gt;
-&lt;li&gt;检测 NSObject 是否响应 +alloc 方法，发现响应，于是检测 MyObject 类，根据其所需的内存空间大小开始分配内存空间，然后把 isa 指针指向 MyObject 类。那么 +alloc 就被加进 cache 列表里面了。&lt;/li&gt;
-&lt;li&gt;完了执行 -init 方法，因为 MyObject 响应该方法，直接加入 cache。&lt;/li&gt;
-&lt;li&gt;执行 self = [super init] 语句。这里直接通过 super 关键字调用父类的 init 方法，确保父类初始化成功，然后再执行自己的初始化逻辑。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;OK，这就是一个很简单的初始化过程，在 NSObject 类里面，alloc 和 init　没做什么特别重大的事情，但是，ObjC 特性允许你的 alloc 和 init 返回的值不同，也就是说，你可以在你的 init 函数里面做一些很复杂的初始化操作，但是返回出去一个简单的对象，这就隐藏了类的复杂性。再举个栗子：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#import &amp;lt; Foundation/Foundation.h&amp;gt;
-
-@interface MyObject : NSObject
-{
- NSString *aString;
-}
-
-@property(retain) NSString *aString;
-
-@end
-
-@implementation MyObject
-
--(id)init
-{
- if (self = [super init]) {
-  [self setAString:nil];
- }
- return self;
-}
-
-@synthesize aString;
-
-@end
-
-
-
-int main (int argc, const char * argv[]) {
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-
- id obj1 = [NSMutableArray alloc];
- id obj2 = [[NSMutableArray alloc] init];
-
- id obj3 = [NSArray alloc];
- id obj4 = [[NSArray alloc] initWithObjects:@&quot;Hello&quot;,nil];
-
- NSLog(@&quot;obj1 class is %@&quot;,NSStringFromClass([obj1 class]));
- NSLog(@&quot;obj2 class is %@&quot;,NSStringFromClass([obj2 class]));
-
- NSLog(@&quot;obj3 class is %@&quot;,NSStringFromClass([obj3 class]));
- NSLog(@&quot;obj4 class is %@&quot;,NSStringFromClass([obj4 class]));
-
- id obj5 = [MyObject alloc];
- id obj6 = [[MyObject alloc] init];
-
- NSLog(@&quot;obj5 class is %@&quot;,NSStringFromClass([obj5 class]));
- NSLog(@&quot;obj6 class is %@&quot;,NSStringFromClass([obj6 class]));
-
- [pool drain];
-    return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;如果你是ObjC的初学者，那么你很可能会认为这段代码执的输出会是：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;NSMutableArray
-NSMutableArray 
-NSArray
-NSArray
-MyObject
-MyObject
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;但事实上是这样的：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;obj1 class is __NSPlaceholderArray
-obj2 class is NSCFArray
-obj3 class is __NSPlaceholderArray
-obj4 class is NSCFArray
-obj5 class is MyObject
-obj6 class is MyObject
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这是因为 ObjC 是允许运行 +alloc 返回一个特定的类，而 init 方法又返回一个不同的类的。可以看到 NSMutableArray 是对普通数组的封装，内部实现是复杂的，但是对外隐藏了复杂性。&lt;/p&gt;
-&lt;h2&gt;OK说回 objc_msgSend 这个方法&lt;/h2&gt;
-&lt;p&gt;这个方法做的事情不少，举个栗子：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[self printMessageWithString:@&quot;Hello World!&quot;];
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这句语句被编译成这样：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;objc_msgSend(self,@selector(printMessageWithString:),@&quot;Hello World!&quot;);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这个方法先去查找 self 这个对象或者其父类是否响应 @selector(printMessageWithString:)，如果从这个类的方法分发表或者 cache 里面找到了，就调用它对应的函数指针。如果找不到，那就会执行一些其他的东西。步骤如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;检测这个 selector 是不是要忽略的。比如 Mac OS X 开发，有了垃圾回收就不理会 retain, release 这些函数了。&lt;/li&gt;
-&lt;li&gt;检测这个 target 是不是 nil 对象。ObjC 的特性是允许对一个 nil 对象执行任何一个方法不会 Crash，因为会被忽略掉。&lt;/li&gt;
-&lt;li&gt;如果上面两个都过了，那就开始查找这个类的 IMP，先从 cache 里面找，完了找得到就跳到对应的函数去执行。&lt;/li&gt;
-&lt;li&gt;如果 cache 找不到就找一下方法分发表。&lt;/li&gt;
-&lt;li&gt;如果还找不到就要开始&lt;strong&gt;消息转发逻辑&lt;/strong&gt;了。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;在编译的时候，你定义的方法比如：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;-(int)doComputeWithNum:(int)aNum 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;会编译成：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;int aClass_doComputeWithNum(aClass *self,SEL _cmd,int aNum) 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后由 runtime 去调用指向你的这个方法的函数指针。那么之前我们说你发起消息其实不是对方法的直接调用，其实 Cocoa 还是提供了可以直接调用的方法的：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;// 首先定义一个 C 语言的函数指针
-int (computeNum *)(id,SEL,int);
-
-// 使用 methodForSelector 方法获取对应与该 selector 的杉树指针，跟 objc_msgSend 方法拿到的是一样的
-// **methodForSelector 这个方法是 Cocoa 提供的，不是 ObjC runtime 库提供的**
-computeNum = (int (*)(id,SEL,int))[target methodForSelector:@selector(doComputeWithNum:)];
-
-// 现在可以直接调用该函数了，跟调用 C 函数是一样的
-computeNum(obj,@selector(doComputeWithNum:),aNum); 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;如果你需要的话，你可以通过这种方式你来确保这个方法一定会被调用。&lt;/p&gt;
-&lt;h2&gt;消息转发机制&lt;/h2&gt;
-&lt;p&gt;在 ObjC 这门语言中，发送消息给一个并不响应这个方法的对象，是合法的，应该也是故意这么设计的。换句话说，我可以对任意一个对象传递任意一个消息（看起来有点像对任意一个类调用任意一个方法，当然事实上不是），当然如果最后找不到能调用的方法就会 Crash 掉。&lt;/p&gt;
-&lt;p&gt;Apple 设计这种机制的原因之一就是——用来模拟多重继承（ObjC 原生是不支持多重继承的）。或者你希望把你的复杂设计隐藏起来。这种转发机制是 Runtime 非常重要的一个特性，大概的步骤如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;查找该类及其父类的 cahce 和方法分发表，在找不到的情况下执行2。&lt;/li&gt;
-&lt;li&gt;执行 + (BOOL) resolveInstanceMethod:(SEL)aSEL 方法。
-&lt;p&gt;这就给了程序员一次机会，可以告诉 runtime 在找不到改方法的情况下执行什么方法。举个栗子，先定义一个函数：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;void fooMethod(id obj, SEL _cmd)
-{
- NSLog(@&quot;Doing Foo&quot;);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;完了重载 resolveInstanceMethod 方法：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;+(BOOL)resolveInstanceMethod:(SEL)aSEL
-{
-    if(aSEL == @selector(doFoo:)){
-        class_addMethod([self class],aSEL,(IMP)fooMethod,&quot;v@:&quot;);
-        return YES;
-    }
-    return [super resolveInstanceMethod];
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;其中  “v@:” 表示返回值和参数，这个符号涉及 Type Encoding，可以参考Apple的文档 &lt;a href=&quot;http://developer.apple.com/mac/library/DOCUMENTATION/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100-SW1&quot;&gt;ObjC Runtime Guide&lt;/a&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;接下来 Runtime 会调用 – (id)forwardingTargetForSelector:(SEL)aSelector 方法。&lt;br /&gt;
-这就给了程序员第二次机会，如果你没办法在自己的类里面找到替代方法，你就重载这个方法，然后把消息转给其他的Object。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;- (id)forwardingTargetForSelector:(SEL)aSelector
-{
-    if(aSelector == @selector(mysteriousMethod:)){
-        return alternateObject;
-    }
-    return [super forwardingTargetForSelector:aSelector];
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这样你就可以把消息转给别人了。当然这里你不能 return self,不然就死循环了=.=&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;最后，Runtime 会调用 – (void)forwardInvocation:(NSInvocation *)anInvocation  这个方法。NSInvocation 其实就是一条消息的封装。如果你能拿到 NSInvocation，那你就能修改这条消息的 target, selector 和 arguments。举个栗子：
-&lt;pre&gt;&lt;code&gt;-(void)forwardInvocation:(NSInvocation *)invocation
-{
-    SEL invSEL = invocation.selector;
-
-    if([altObject respondsToSelector:invSEL]) {
-        [invocation invokeWithTarget:altObject];
-    } else {
-        [self doesNotRecognizeSelector:invSEL];
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;默认情况下 NSObject 对 forwardInvocation 的实现就是简单地执行 -doesNotRecognizeSelector: 这个方法，所以如果你想真正的在最后关头去转发消息你可以重载这个方法（好折腾-.-）。&lt;/p&gt;
-&lt;p&gt;原文后面介绍了 Non Fragile ivars (Modern Runtime)， Objective-C Associated Objects 和 Hybrid vTable Dispatch。鉴于一是底层的可以不用理会，一是早司空见惯的不用详谈，还有一个是很简单的，就是一个建立在方法分发表里面填入默认常用的 method，所以有兴趣的读者可以自行查阅原文，这里就不详谈鸟。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;References&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html&quot;&gt;Objective-C Runtime Programming Guide&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ObjCRuntimeRef/Reference/reference.html&quot;&gt;Objective-C Runtime Reference&lt;/a&gt;&lt;/p&gt;
-					&lt;/div&gt;
 </content>
    </entry>
    
