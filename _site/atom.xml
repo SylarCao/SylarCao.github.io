@@ -4,7 +4,7 @@
    <title></title>
    <link href="" rel="self" type="application/atom+xml"/>
    <link href="" rel="alternate" type="text/html" />
-   <updated>2015-07-09T14:06:57+08:00</updated>
+   <updated>2015-11-06T19:04:25+08:00</updated>
    <id></id>
    <author>
      <name></name>
@@ -14,7 +14,7 @@
    
    <entry>
      <title>用户想要的功能就该给吗？新产品开发如何跳出“死亡循环”【转】</title>
-     <link href="http://beiyuu.com/blog/2015/07/09/user_requirement.html"/>
+     <link href="http://beiyuu.com/blog/2015/07/09/user-requirement.html"/>
      <updated>2015-07-09T00:00:00+08:00</updated>
      <id>http://beiyuu.com/blog/2015/07/09/user_requirement</id>
      <content type="html">&lt;blockquote&gt;
@@ -117,7 +117,7 @@
    
    <entry>
      <title>网易新闻iOS版使用的18个开源组件【转】</title>
-     <link href="http://beiyuu.com/blog/2015/05/25/wangyi_ios.html"/>
+     <link href="http://beiyuu.com/blog/2015/05/25/wangyi-ios.html"/>
      <updated>2015-05-25T00:00:00+08:00</updated>
      <id>http://beiyuu.com/blog/2015/05/25/wangyi_ios</id>
      <content type="html">&lt;blockquote&gt;
@@ -138,7 +138,7 @@
    
    <entry>
      <title>讲述一个程序员眼中的北京和上海 【转】</title>
-     <link href="http://beiyuu.com/blog/2015/05/18/beijing_shanghai.html"/>
+     <link href="http://beiyuu.com/blog/2015/05/18/beijing-shanghai.html"/>
      <updated>2015-05-18T00:00:00+08:00</updated>
      <id>http://beiyuu.com/blog/2015/05/18/beijing_shanghai</id>
      <content type="html">&lt;blockquote&gt;
@@ -312,7 +312,7 @@ CEO是这么和我说的，不管他说的是真是假。我们在历经了4个�
    
    <entry>
      <title>几乎整个互联网行业都缺 CTO【转】</title>
-     <link href="http://beiyuu.com/blog/2015/04/10/%E5%87%A0%E4%B9%8E%E6%95%B4%E4%B8%AA%E4%BA%92%E8%81%94%E7%BD%91%E8%A1%8C%E4%B8%9A%E9%83%BD%E7%BC%BA%20CTO.html"/>
+     <link href="http://beiyuu.com/blog/2015/04/10/%E5%87%A0%E4%B9%8E%E6%95%B4%E4%B8%AA%E4%BA%92%E8%81%94%E7%BD%91%E8%A1%8C%E4%B8%9A%E9%83%BD%E7%BC%BA-cto.html"/>
      <updated>2015-04-10T00:00:00+08:00</updated>
      <id>http://beiyuu.com/blog/2015/04/10/几乎整个互联网行业都缺 CTO</id>
      <content type="html">&lt;blockquote&gt;
@@ -355,7 +355,7 @@ CEO是这么和我说的，不管他说的是真是假。我们在历经了4个�
    
    <entry>
      <title>abc</title>
-     <link href="http://beiyuu.com/mine/2015/04/04/sylarCV.html"/>
+     <link href="http://beiyuu.com/mine/2015/04/04/sylarcv.html"/>
      <updated>2015-04-04T00:00:00+08:00</updated>
      <id>http://beiyuu.com/mine/2015/04/04/sylarCV</id>
      <content type="html">

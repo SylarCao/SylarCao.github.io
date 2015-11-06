@@ -41,6 +41,7 @@ description:  Hello World
   - 解决方案
     + ruby 版本到2.1.1 即可
     + <code>rvm use ruby-2.1.1</code>
+    + <code>rvm --default use 2.1.1</code>
     + 参考 [https://github.com/jekyll/jekyll/issues/2125][link4]
 
 

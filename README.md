@@ -12,4 +12,9 @@
 ###请删掉统计代码哦 /_layouts/default.html L38-41
 
  -->
+
+ rvm use ruby-2.1.1
+
+
+ 
 jekyll serve --watch
